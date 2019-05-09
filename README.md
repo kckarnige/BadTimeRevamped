@@ -1,10 +1,10 @@
-### Sprites
+## Sprites
 
 **Sans Sprites -** [KayoticCarnige(Me)](https://www.youtube.com/channel/UCHDWD1G20SVO399jCS0LDNQ)
 
 **Gui Sprites -** [KayoticCarnige(Me)](https://www.youtube.com/channel/UCHDWD1G20SVO399jCS0LDNQ) / [Toby Fox](https://www.youtube.com/channel/UCnU71djNmnURVEGw0OJ1pMA)
 
-### Song
+## Song
 
 [[Dubstep] Megalovania Remix - Sans Boss Fight](https://www.youtube.com/watch?v=wxQminmEL7o)
 
