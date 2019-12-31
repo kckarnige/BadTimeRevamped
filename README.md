@@ -2,7 +2,7 @@
 
 **Sans Sprites -** [KayoticCarnige(Me)](https://www.youtube.com/channel/UCHDWD1G20SVO399jCS0LDNQ)
 
-**Gui Sprites -** [KayoticCarnige(Me)](https://www.youtube.com/channel/UCHDWD1G20SVO399jCS0LDNQ) / [Toby Fox](https://www.youtube.com/channel/UCnU71djNmnURVEGw0OJ1pMA) (Not a collab, no shit)
+**Gui Sprites -** [KayoticCarnige(Me)](https://www.youtube.com/channel/UCHDWD1G20SVO399jCS0LDNQ)
 
 ## Song
 
