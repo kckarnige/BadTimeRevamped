@@ -1,5 +1,7 @@
+0,Sound,ChurchBell,,,,,,,
 0,SansAnimation,,,,,,,,
-0,SansHead,ClosedEyes,,,,,,,
+9,SansHead,ClosedEyes,,,,,,,
+0,SansHead,Wink,,,,,,,
 0,SansText,ready?,,,,,,,
 0,BlackScreen,1,,,,,,,
 0,Sound,Flash,,,,,,,
@@ -8,6 +10,7 @@
 0,CombatZoneResizeInstant,239,226,404,391,,,,
 0,HeartTeleport,320,304,,,,,,
 0,HeartMode,0,,,,,,,
+0,SansTorso,Default,,,,,,,
 0,SansBody,HandDown,,,,,,,
 0,SansHead,BlueEye,,,,,,,
 0,Sound,GasterBlaster,1.4,,,,,,
@@ -35,6 +38,12 @@
 0,GasterBlaster,1,640,480,379,446,270,0.333,0.26666
 0.7,GasterBlaster,2,0,240,139,306,0,0.666,0.5
 0,GasterBlaster,2,640,240,499,306,180,0.666,0.5
-3,SansHead,Default,,,,,,,
+3,SansHead,BlueWink,,,,,,,
+0,Sound,Ding,,,,,,,
+0,SansTorso,ShrugRight,,,,,,,
 0,SansText,here we go.,,,,,,,
+0,BlackScreen,1,,,,,,,
+0,Sound,Flash,,,,,,,
+1,BlackScreen,0,,,,,,,
+0,Sound,Flash,,,,,,,
 0,EndAttack,,,,,,,,

@@ -107,7 +107,7 @@
 0,CombatZoneResizeInstant,239,226,404,391,,,,
 0,HeartTeleport,320,376,,,,,,
 0,HeartMode,1,,,,,,,
-0,SansAnimation,HeadBob,,,,,,,
+0,SansAnimation,Idle,,,,,,,
 0.03333,BoneStab,1,48,0.6,1,,,,
 0,BoneStab,3,48,0.6,1,,,,
 0.9,BlackScreen,1,,,,,,,

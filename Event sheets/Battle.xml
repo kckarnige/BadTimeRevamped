@@ -1447,9 +1447,13 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="4" name="Set animation" sid="645884009510018" type="SansHead">
+                    <param id="0" name="Animation">&quot;TiredClosedEyes&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
                 <action id="0" name="Call function" sid="522788098430892" type="Function">
                     <param id="0" name="Name">&quot;SansText&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;alright, i guess&quot; &amp; newline &amp; &quot;you win.&quot;{###}&quot;Win2&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;heh heh heh..&quot;{###}&quot;Win2&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -1460,8 +1464,31 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="4" name="Set animation" sid="936126008613599" type="SansHead">
+                    <param id="0" name="Animation">&quot;Tired3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="499957231127238" type="Function">
+                    <param id="0" name="Name">&quot;SansText&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;you really are a&quot; &amp; newline &amp; &quot;freak, huh?&quot;{###}&quot;Win3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="659194286030066">
+            <conditions>
+                <condition id="0" name="On function" sid="393353647367912" type="Function">
+                    <param id="0" name="Name">&quot;Win3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
                 <action id="-2" name="Go to layout" sid="4143671674600644" type="System">
                     <param id="0" name="Layout">MainMenu</param>
+                </action>
+                <action id="0" name="Play" sid="762858804649688" type="Audio">
+                    <param id="0" name="Audio file">snd_wrongvictory</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>

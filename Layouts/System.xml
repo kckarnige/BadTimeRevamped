@@ -772,12 +772,12 @@
                         <x>320</x>
                         <y>352</y>
                         <z>0</z>
-                        <width>4</width>
-                        <height>6</height>
+                        <width>14</width>
+                        <height>12</height>
                         <depth>0</depth>
                         <hotspotX>-1</hotspotX>
                         <hotspotY>5.666666508</hotspotY>
-                        <angle>0</angle>
+                        <angle>0.380507767</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
