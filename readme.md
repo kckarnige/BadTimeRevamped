@@ -1,5 +1,8 @@
 # Bad Time Simulator: Reimagined
 This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-fight), by [Jcw87](https://github.com/Jcw87).
+
+The web version can be played [here](https://kckarnige.is-a.dev/BadTimeRevamped), and the downloadable versions can be found [here](https://github.com/kckarnige/BadTimeRevamped/releases).
+
 It was made with [Construct 2](https://www.scirra.com/construct2).
 
 Known Issues
