@@ -1,9 +1,9 @@
 ﻿{
-	"version": 1561847244,
+	"version": 1629637567,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
-		"jquery-2.1.1.min.js",
+		"jquery-3.4.1.min.js",
 		"offlineClient.js",
 		"images/vpad-sheet0.png",
 		"images/hpbackground.png",
@@ -22,9 +22,12 @@
 		"images/targetchoice-sheet0.png",
 		"images/strike-sheet0.png",
 		"images/combatzoneunclipper.png",
+		"images/uiborder.png",
 		"images/sanshead-sheet0.png",
+		"images/sanshead-sheet1.png",
 		"images/sansbody-sheet0.png",
 		"images/sansbody-sheet1.png",
+		"images/sansbody-sheet2.png",
 		"images/sanslegs-sheet0.png",
 		"images/sanssweat-sheet0.png",
 		"images/sanstorso-sheet0.png",
@@ -56,6 +59,10 @@
 		"images/heartshard-sheet1.png",
 		"images/heartshard-sheet2.png",
 		"images/playerhitbox-sheet0.png",
+		"images/sprite-sheet0.png",
+		"images/sprite2-sheet0.png",
+		"images/hpoverlay-sheet0.png",
+		"images/uiactsheet-sheet0.png",
 		"media/ding.ogg",
 		"media/playerfight.ogg",
 		"media/playerdamaged.ogg",
@@ -73,6 +80,8 @@
 		"media/battletext.ogg",
 		"media/playerheal.ogg",
 		"media/gasterblast2.ogg",
+		"media/churchbell.ogg",
+		"media/snd_wrongvictory.ogg",
 		"media/mus_zz_megalovania.ogg",
 		"icon-16.png",
 		"icon-32.png",
@@ -80,7 +89,6 @@
 		"icon-128.png",
 		"icon-256.png",
 		"loading-logo.png",
-		"sans_intro.csv",
 		"sans_bonegap1.csv",
 		"sans_bonegap2.csv",
 		"sans_bluebone.csv",
@@ -103,6 +111,7 @@
 		"sans_randomblaster2.csv",
 		"sans_bonestab3.csv",
 		"sans_multi3.csv",
-		"sans_final.csv"
+		"sans_final.csv",
+		"sans_intro.csv"
 	]
 }
