@@ -25,3 +25,4 @@ KayoticCarnige's Discord Server
 If you want to contact me, just DM through my server:
 
 - [Discord Server](https://kckarnige.is-a.dev/discord-server)
+- [My Discord Profile](https://discord.com/users/634168893644210186)
