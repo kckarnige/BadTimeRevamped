@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1629637567,
+	"version": 1640966937,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -63,6 +63,8 @@
 		"images/sprite2-sheet0.png",
 		"images/hpoverlay-sheet0.png",
 		"images/uiactsheet-sheet0.png",
+		"images/battlebackground-sheet0.png",
+		"images/sprite4-sheet0.png",
 		"media/ding.ogg",
 		"media/playerfight.ogg",
 		"media/playerdamaged.ogg",
