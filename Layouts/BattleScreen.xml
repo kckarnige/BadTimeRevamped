@@ -285,6 +285,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="BattleBackground" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>323.74697876</x>
+                        <y>-12.875244141</y>
+                        <z>0</z>
+                        <width>555.720581055</width>
+                        <height>216.467254639</height>
+                        <depth>0</depth>
+                        <hotspotX>0.505728304</hotspotX>
+                        <hotspotY>-0.109243698</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="CombatZone" uid="7">
                     <properties>
                         <left-margin>8</left-margin>

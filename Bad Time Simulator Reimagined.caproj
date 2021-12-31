@@ -1076,6 +1076,38 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BattleBackground" sid="612588098964111">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383374342401393" speed="5">
+                    <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BattleBackground2" sid="936706279415187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="782958616365506" speed="5">
+                    <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BattleBackground3" sid="253887083879848">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598357593609693" speed="5">
+                    <frame duration="1" hotspotX="0.505728" hotspotY="-0.109244" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="800367606724629">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="163643085698278" speed="5">
+                    <frame duration="1" hotspotX="0.500521" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">
