@@ -192,7 +192,7 @@
                             <param id="0" name="Height">32</param>
                         </action>
                         <action id="0" name="Set text" sid="8939946990053354" type="BattleFont">
-                            <param id="0" name="Text">&quot;PRESS &apos;X&apos; TO QUIT&quot;</param>
+                            <param id="0" name="Text">&quot;PRESS &apos;X&apos; OR &apos;SHIFT&apos; TO QUIT&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1197,31 +1197,31 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="311543805478558">
+                        <event-block sid="304164657957876">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="123335850813357" type="System">
+                                <condition id="-14" name="Compare variable" sid="845972953038798" type="System">
                                     <param id="0" name="Variable">KR</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">10</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="759843657247084" type="CombatZone">
+                                <action id="-10" name="Set value" sid="705142712742451" type="CombatZone">
                                     <param id="0" name="Instance variable">InfoText</param>
                                     <param id="1" name="Value">&quot;* You felt your sins weighing&quot; &amp; newline &amp; &quot;  on your neck.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block disabled="1" sid="795306615451230">
+                        <event-block sid="311219844680943">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="905557718249398" type="System">
+                                <condition id="-14" name="Compare variable" sid="167913429030745" type="System">
                                     <param id="0" name="Variable">KR</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">20</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="708135348105202" type="CombatZone">
+                                <action id="-10" name="Set value" sid="220554790610536" type="CombatZone">
                                     <param id="0" name="Instance variable">InfoText</param>
                                     <param id="1" name="Value">&quot;* KARMA coursing through your&quot; &amp; newline &amp; &quot;  veins.&quot;</param>
                                 </action>
@@ -7105,6 +7105,19 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="449277202075253" type="SansHead">
+                            <param id="0" name="Animation">Function.Param(0)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="388776357348121">
+                    <conditions>
+                        <condition id="0" name="On function" sid="441385519669555" type="Function">
+                            <param id="0" name="Name">&quot;BattleBackground&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="220899598767662" type="BattleBackground">
                             <param id="0" name="Animation">Function.Param(0)</param>
                             <param id="1" name="From">1</param>
                         </action>

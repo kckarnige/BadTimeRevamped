@@ -197,7 +197,7 @@
                             <param id="0" name="Y">SpeechBubble.Y + 16</param>
                         </action>
                         <action id="-5" name="Set width" sid="7720130521571646" type="SansFont">
-                            <param id="0" name="Width">256</param>
+                            <param id="0" name="Width">190</param>
                         </action>
                         <action id="-6" name="Set height" sid="146134970176092" type="SansFont">
                             <param id="0" name="Height">64</param>
