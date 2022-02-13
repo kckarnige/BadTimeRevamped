@@ -1874,7 +1874,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="818540111613540" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Sans&quot;{###}Action</param>
+                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Sans&quot;{###}Action{###}255{###}255{###}255</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2218,7 +2218,7 @@
                         </action>
                         <action id="0" name="Call function" sid="250405060356076" type="Function">
                             <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Check&quot;{###}&quot;MenuCheckSans&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Check&quot;{###}&quot;MenuCheckSans&quot;{###}255{###}255{###}255</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2410,7 +2410,7 @@
                                 </action>
                                 <action id="0" name="Call function" sid="123728439530942" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}X{###}Y{###}loopindex{###}Text{###}&quot;MenuUseItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}X{###}Y{###}loopindex{###}Text{###}&quot;MenuUseItem&quot;{###}255{###}255{###}255</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2442,7 +2442,7 @@
                                 </action>
                                 <action id="0" name="Call function" sid="888139108766780" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}X{###}Y{###}loopindex+4{###}Text{###}&quot;MenuUseItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}X{###}Y{###}loopindex+4{###}Text{###}&quot;MenuUseItem&quot;{###}255{###}255{###}255</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2564,7 +2564,7 @@
                         </action>
                         <action id="0" name="Call function" sid="986631449476559" type="Function">
                             <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Spare&quot;{###}&quot;MenuSpare&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Spare&quot;{###}&quot;MenuSpare&quot;{###}255{###}255{###}255</param>
                         </action>
                     </actions>
                 </event-block>
