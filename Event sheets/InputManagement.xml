@@ -218,7 +218,7 @@
                             <conditions>
                                 <condition id="3" name="Is button down" sid="8796805238976963" type="Gamepad">
                                     <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">2</param>
+                                    <param id="1" name="Button">1</param>
                                 </condition>
                             </conditions>
                             <actions>

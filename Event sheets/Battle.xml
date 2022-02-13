@@ -510,6 +510,13 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-26" name="Move to layer" sid="159760201980265" type="PlayerHeart">
+                    <param id="0" name="Layer">&quot;CombatZone&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="768635999605187" type="PlayerHeart">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
                 <action behavior="CustomMovement" id="12" name="Set enabled" sid="9685765655189372" type="PlayerHeart">
                     <param id="0" name="State">1</param>
                 </action>
@@ -1448,7 +1455,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="645884009510018" type="SansHead">
-                    <param id="0" name="Animation">&quot;TiredClosedEyes&quot;</param>
+                    <param id="0" name="Animation">&quot;Chuckle&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="0" name="Call function" sid="522788098430892" type="Function">
@@ -1484,13 +1491,55 @@
                 <action id="-2" name="Go to layout" sid="4143671674600644" type="System">
                     <param id="0" name="Layout">MainMenu</param>
                 </action>
-                <action id="0" name="Play" sid="762858804649688" type="Audio">
-                    <param id="0" name="Audio file">snd_wrongvictory</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                <action id="0" name="Call function" sid="477918406126445" type="Function">
+                    <param id="0" name="Name">&quot;WinJingle&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="706085464861024">
+            <conditions>
+                <condition id="0" name="On function" sid="679981390348912" type="Function">
+                    <param id="0" name="Name">&quot;WinJingle&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="409638296807966">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="324090525126756" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">92</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="762858804649688" type="Audio">
+                            <param id="0" name="Audio file">snd_wrongvictory</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="445438767800452">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="523793993517557" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">92</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="326997407642821" type="Audio">
+                            <param id="0" name="Audio file">snd_dumbvictory</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6096733224286633">
             <conditions>
@@ -2663,6 +2712,9 @@
                         <action id="-4" name="Set position to another object" sid="5758182527997727" type="PlayerHeart">
                             <param id="0" name="Object">UIButtons</param>
                             <param id="1" name="Image point (optional)">&quot;Heart&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="947968361801165" type="PlayerHeart">
+                            <param id="0" name="Layer">&quot;Background&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -7712,6 +7764,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <variable constant="0" name="HitCount" sid="724864727300305" static="0" type="number">0</variable>
         <event-group description="" sid="643035177198997" title="PlayerDamage">
             <sub-events>
                 <variable constant="0" name="LastDamageTime" sid="9910897188057685" static="1" type="number">0</variable>
@@ -7763,6 +7816,10 @@
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="691803606827817" type="System">
+                            <param id="0" name="Variable">HitCount</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -8548,5 +8605,9 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="886095458259709">
+            <conditions />
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>

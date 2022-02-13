@@ -55,7 +55,7 @@
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">NW.js</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -122,12 +122,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7839461660390996" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="5181432374441549" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_actbt_center_1.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -137,12 +137,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2415236592226629" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="5506998997872373" speed="5">
+                    <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="5506998997872373" speed="1">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_fightbt_1.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -152,12 +152,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4560456212490265" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="7286896709592169" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_itembt_1.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -167,12 +167,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5127942938396299" speed="5">
                         <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\kayos\Desktop\Trash\Undertale\Construct 2\Animations\PlayerHeart\Default\000.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="4270938902148832" speed="5">
                         <frame duration="1" hotspotX="1" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -406,14 +406,6 @@
                                 <point x="0.125" y="0.866667" />
                                 <point x="0.03125" y="0.5" />
                             </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="2" loop="1" name="Laugh" pingpong="0" repeatcount="1" repeatto="0" sid="2276838282479599" speed="6">
-                        <frame duration="25" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Sweat" x="0.5" y="0" />
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Chuckle" pingpong="0" repeatcount="1" repeatto="0" sid="661026087497288" speed="5">
@@ -1101,24 +1093,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="uiactsheet" sid="999936379715525">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812749842762054" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kayos\Desktop\CorruptedSprites\uiact-sheet0.png">
-                        <collision-poly>
-                            <point x="0.0234375" y="0.0234375" />
-                            <point x="0.5" y="0.0078125" />
-                            <point x="0.867188" y="0.132813" />
-                            <point x="0.867188" y="0.5" />
-                            <point x="0.679688" y="0.679688" />
-                            <point x="0.320313" y="0.679688" />
-                            <point x="0.0078125" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">
@@ -1299,6 +1273,8 @@
         <file name="GasterBlast2.ogg" />
         <file name="ChurchBell.ogg" />
         <file name="snd_wrongvictory.ogg" />
+        <file name="snd_dumbvictory.m4a" />
+        <file name="snd_dumbvictory.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="mus_zz_megalovania.ogg" />

@@ -494,6 +494,21 @@
                             <param id="0" name="Instance variable">Name</param>
                             <param id="1" name="Value">&quot;Menu&quot; &amp; MenuItem.ID</param>
                         </action>
+                        <action id="-28" name="Set effect parameter" sid="957169683064810" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">Function.Param(6)</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="210646947109271" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">Function.Param(7)</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="189895445955384" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">Function.Param(8)</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="4459952550089159">
