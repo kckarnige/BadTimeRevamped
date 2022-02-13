@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1644759811,
+	"version": 1644776700,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -23,6 +23,7 @@
 		"images/strike-sheet0.png",
 		"images/combatzoneunclipper.png",
 		"images/uiborder.png",
+		"images/hpbarmask-sheet0.png",
 		"images/sanshead-sheet0.png",
 		"images/sanshead-sheet1.png",
 		"images/sansbody-sheet0.png",
@@ -59,8 +60,6 @@
 		"images/heartshard-sheet1.png",
 		"images/heartshard-sheet2.png",
 		"images/playerhitbox-sheet0.png",
-		"images/sprite2-sheet0.png",
-		"images/hpoverlay-sheet0.png",
 		"media/ding.ogg",
 		"media/playerfight.ogg",
 		"media/playerdamaged.ogg",
