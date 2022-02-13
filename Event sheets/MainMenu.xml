@@ -12,36 +12,38 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="301026708660067" type="System" />
             </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="493187173332363" type="System">
-                    <param id="0" name="Object to create">BattleFont</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">8</param>
-                    <param id="3" name="Y">416</param>
-                </action>
-                <action id="-10" name="Set value" sid="605342153352148" type="BattleFont">
-                    <param id="0" name="Instance variable">Name</param>
-                    <param id="1" name="Value">&quot;Update&quot;</param>
-                </action>
-                <action id="-5" name="Set width" sid="511018501210371" type="BattleFont">
-                    <param id="0" name="Width">640</param>
-                </action>
-                <action id="-6" name="Set height" sid="834519197109982" type="BattleFont">
-                    <param id="0" name="Height">64</param>
-                </action>
-                <action id="0" name="Set text" sid="997228410907339" type="BattleFont">
-                    <param id="0" name="Text">&quot;UPDATE TEXT&quot;</param>
-                </action>
-                <action id="-15" name="Set visible" sid="633456208298692" type="BattleFont">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="566182451496929">
             <conditions>
                 <condition id="19" name="On update found" sid="271470835549957" type="Browser" />
             </conditions>
             <actions>
+                <action id="-9" name="Destroy" sid="446536556958593" type="MenuItem" />
+                <action id="-9" name="Destroy" sid="391297228218018" type="DefaultFont" />
+                <action id="-9" name="Destroy" sid="450269158482936" type="BattleFont" />
+                <action id="-3" name="Create object" sid="493187173332363" type="System">
+                    <param id="0" name="Object to create">DefaultFont</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">8</param>
+                    <param id="3" name="Y">416</param>
+                </action>
+                <action id="-10" name="Set value" sid="605342153352148" type="DefaultFont">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Value">&quot;Update&quot;</param>
+                </action>
+                <action id="-5" name="Set width" sid="511018501210371" type="DefaultFont">
+                    <param id="0" name="Width">640</param>
+                </action>
+                <action id="-6" name="Set height" sid="834519197109982" type="DefaultFont">
+                    <param id="0" name="Height">64</param>
+                </action>
+                <action id="7" name="Set horizontal alignment" sid="308801108648080" type="DefaultFont">
+                    <param id="0" name="Horizontal alignment">1</param>
+                </action>
+                <action id="8" name="Set vertical alignment" sid="115282074981084" type="DefaultFont">
+                    <param id="0" name="Vertical alignment">1</param>
+                </action>
                 <action id="14" name="Log" sid="186182218521078" type="Browser">
                     <param id="0" name="Type">0</param>
                     <param id="1" name="Message">&quot;[DEBUG] Update found&quot;</param>
@@ -60,8 +62,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="234881402244069" type="BattleFont">
-                            <param id="0" name="Text">&quot;UPDATE AVAILABLE.&quot; &amp; newline &amp; &quot;DOWNLOADING...&quot;</param>
+                        <action id="0" name="Set text" sid="234881402244069" type="DefaultFont">
+                            <param id="0" name="Text">&quot;Update Available!&quot; &amp; newline &amp; &quot;Downloading...&quot;</param>
                         </action>
                         <action id="-15" name="Set visible" sid="642147750921346" type="RPGText">
                             <param id="0" name="Visibility">1</param>
@@ -97,7 +99,11 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="0" name="Set text" sid="773819482594290" type="RPGText">
-                            <param id="0" name="Text">&quot;UPDATE AVAILABLE.&quot; &amp; newline &amp; &quot;PLEASE REFRESH THE PAGE (CTRL+F5).&quot;</param>
+                            <param id="0" name="Text">&quot;Update Ready!&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="645615337072404" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}192{###}0{###}&quot;Reload&quot;{###}&quot;UpdateReload&quot;{###}255{###}255{###}0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -224,6 +230,7 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="4876547611972064" type="MenuItem" />
                         <action id="-9" name="Destroy" sid="9716864372445079" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="901854460616061" type="BattleFont" />
                         <action id="0" name="Call function" sid="3898774398935571" type="Function">
                             <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
@@ -276,6 +283,7 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="2007414306464213" type="MenuItem" />
                         <action id="-9" name="Destroy" sid="8210127351655443" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="431425289154358" type="BattleFont" />
                         <action id="0" name="Call function" sid="4849523377919098" type="Function">
                             <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
@@ -335,96 +343,6 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="9595352188215692" type="System">
                             <param id="0" name="Layout">BattleScreen</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9054944955083307">
-                    <conditions>
-                        <condition id="0" name="On function" sid="1137774981259011" type="Function">
-                            <param id="0" name="Name">&quot;MenuCustomSelect&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="8400962482911318" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="4432629290632502" type="DefaultFont" />
-                        <action id="0" name="Call function" sid="3348489213393067" type="Function">
-                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;MenuModeCustom&quot;</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="7277637630369302" type="System">
-                            <param id="0" name="Object to create">MenuItem</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">192</param>
-                            <param id="3" name="Y">96</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="2159555875386753" type="MenuItem">
-                            <param id="0" name="Instance variable">Created</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="1755543219714336" type="System">
-                            <param id="0" name="Object to create">FileChooser</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">224</param>
-                            <param id="3" name="Y">96</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7985503632529348">
-                    <conditions>
-                        <condition id="0" name="On function" sid="6709395051738056" type="Function">
-                            <param id="0" name="Name">&quot;MenuCustomRun&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="5872857608887822" type="System">
-                            <param id="0" name="Variable">SingleAttack</param>
-                            <param id="1" name="Value">&quot;custom&quot;</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="3586928206039241" type="System">
-                            <param id="0" name="Layout">BattleScreen</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="4647217044743368">
-                    <conditions>
-                        <condition id="0" name="On changed" sid="9102398507502319" type="FileChooser" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Request URL" sid="2309179160700937" type="AJAX">
-                            <param id="0" name="Tag">&quot;custom&quot;</param>
-                            <param id="1" name="URL">FileChooser.FileURLAt(0)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3298027994454229">
-                    <conditions>
-                        <condition id="0" name="On completed" sid="8558685013424337" type="AJAX">
-                            <param id="0" name="Tag">&quot;custom&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Add key" sid="3047116548548368" type="AttackList">
-                            <param id="0" name="Key">&quot;custom&quot;</param>
-                            <param id="1" name="Value">AJAX.LastData</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="9490153154596489" type="System">
-                            <param id="0" name="Object to create">BattleFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">8</param>
-                            <param id="3" name="Y">8</param>
-                        </action>
-                        <action id="0" name="Set text" sid="1740537707642743" type="BattleFont">
-                            <param id="0" name="Text">&quot;CUSTOM ATTACK LOADED&quot;</param>
-                        </action>
-                        <action id="-5" name="Set width" sid="5325527041498359" type="BattleFont">
-                            <param id="0" name="Width">640</param>
-                        </action>
-                        <action id="-6" name="Set height" sid="5211929348730813" type="BattleFont">
-                            <param id="0" name="Height">32</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="9241165621789806" type="BattleFont">
-                            <param id="0" name="Instance variable">Timeout</param>
-                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -641,6 +559,7 @@
             <actions>
                 <action id="-9" name="Destroy" sid="262351585150420" type="MenuItem" />
                 <action id="-9" name="Destroy" sid="342659643289318" type="DefaultFont" />
+                <action id="-9" name="Destroy" sid="218277601519272" type="BattleFont" />
                 <action id="0" name="Call function" sid="970366100278439" type="Function">
                     <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                     <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
@@ -649,14 +568,14 @@
                     <param id="0" name="Object to create">DefaultFont</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">0</param>
-                    <param id="3" name="Y">200</param>
+                    <param id="3" name="Y">0</param>
                 </action>
                 <action id="-7" name="Set size" sid="151427367833096" type="DefaultFont">
                     <param id="0" name="Width">640</param>
-                    <param id="1" name="Height">128</param>
+                    <param id="1" name="Height">52</param>
                 </action>
                 <action id="2" name="Set scale" sid="532947789266196" type="DefaultFont">
-                    <param id="0" name="Scale">3</param>
+                    <param id="0" name="Scale">2</param>
                 </action>
                 <action id="0" name="Set text" sid="593987759318855" type="DefaultFont">
                     <param id="0" name="Text">&quot;Loading...&quot;</param>
@@ -670,8 +589,20 @@
                 <action id="-15" name="Set visible" sid="866921950088025" type="PlayerHeart">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="17" name="Execute Javascript" sid="253050857060468" type="Browser">
+                <action id="17" name="Execute Javascript" sid="128426260259838" type="Browser">
                     <param id="0" name="Javascript">&quot;location.href = &apos;https://github.com/kckarnige/BadTimeRevamped/releases&apos;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="892822516868866">
+            <conditions>
+                <condition id="0" name="On function" sid="201269221683367" type="Function">
+                    <param id="0" name="Name">&quot;UpdateReload&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="731610982347139" type="Browser">
+                    <param id="0" name="Javascript">&quot;location.reload(true)&quot;</param>
                 </action>
             </actions>
         </event-block>
