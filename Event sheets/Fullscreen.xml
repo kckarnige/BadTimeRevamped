@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Fullscreen</name>
+    <events>
+        <event-group description="" sid="648044199625263" title="Fullscreen Toggle" />
+        <event-block sid="112359814850079">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="920626164911990" type="System" />
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="914295062084297" type="Browser">
+                    <param id="0" name="Javascript">&quot;function fixScreen() {&#x0D;&#x0A;    document.getElementById(&apos;c2canvas&apos;).style.width = &apos;512px&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvas&apos;).style.height = &apos;384px&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvas&apos;).width = &apos;640&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvas&apos;).height = &apos;480&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvasdiv&apos;).style.width = &apos;512px&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvasdiv&apos;).style.height = &apos;384px&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvasdiv&apos;).style.marginLeft = &apos;62px&apos;;&#x0D;&#x0A;    document.getElementById(&apos;c2canvasdiv&apos;).style.marginTop = &apos;34px&apos;;&#x0D;&#x0A;}&#x0D;&#x0A;&#x0D;&#x0A;function toggleFullScreen() {&#x0D;&#x0A;    if (!document.fullscreenElement) {  // current working methods&#x0D;&#x0A;      if (document.documentElement.requestFullscreen) {&#x0D;&#x0A;        document.documentElement.requestFullscreen();&#x0D;&#x0A;        document.getElementById(&apos;c2canvas&apos;).width = &apos;800&apos;;&#x0D;&#x0A;        document.getElementById(&apos;c2canvas&apos;).height = &apos;600&apos;;&#x0D;&#x0A;        document.getElementById(&apos;c2canvasdiv&apos;).style.width = &apos;640px&apos;;&#x0D;&#x0A;        document.getElementById(&apos;c2canvasdiv&apos;).style.height = &apos;480px&apos;;&#x0D;&#x0A;        document.getElementById(&apos;c2canvasdiv&apos;).style.marginLeft = &apos;-2px&apos;;&#x0D;&#x0A;        document.getElementById(&apos;c2canvasdiv&apos;).style.marginTop = &apos;-14px&apos;;&#x0D;&#x0A;      }&#x0D;&#x0A;    } else {&#x0D;&#x0A;       if (document.cancelFullScreen) {&#x0D;&#x0A;          document.cancelFullScreen();&#x0D;&#x0A;          setTimeout(fixScreen, 500);&#x0D;&#x0A;       } else if (document.webkitCancelFullScreen) {&#x0D;&#x0A;         document.webkitCancelFullScreen();&#x0D;&#x0A;         setTimeout(fixScreen, 100);&#x0D;&#x0A;       }&#x0D;&#x0A;    }&#x0D;&#x0A;  }&#x0D;&#x0A;&#x0D;&#x0A;  document.addEventListener(&apos;keydown&apos;, (e) =&gt; {         &#x0D;&#x0A;    if (e.key === &apos;F4&apos;) {&#x0D;&#x0A;      toggleFullScreen();&#x0D;&#x0A;    }&#x0D;&#x0A;  });&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

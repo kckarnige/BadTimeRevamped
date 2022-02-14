@@ -8,10 +8,20 @@ This mod and the original Bad Time Simulator were made in [Construct 2](https://
 
 Known Issues
 ------------
-- Not using the latest build on Bad Time Simulator (Latest commit as of writing, May 29, 2021: Commit 33)
-- Heart hitbox is probably not accurate.
-- On the sans_platforms4 and sans_platforms4hard attacks, the platform is supposed to accelerate from 0 to its full speed, but I was lazy and started it at full speed immediately. This is only a problem if you try to dodge the bones without jumping.
-- Sans dialog is missing. I may add something at some future date, but I have no intention of putting the original text in, as it really only makes sense in the context of the whole game.
+- Using an outdated build of Bad Time Simulator [WILL NOT BE RESOLVED] (Latest commit as of writing, May 29, 2021: Commit 33)
+- Achievements are not working properly
+
+Version Info
+--------------------------------
+I'm not releasing any builds on the main branch, nor for offline use until they are stable and ready to be released.
+
+In the meantime, this branch will be dedicated to InDev builds, with the letter indicating the stage of development, and the number next to it being the build number.
+- A = Alpha/Unstable
+- B = Beta/Mostly Stable
+- S = Stable, but awaiting a few finishing touches)
+- P = Preview/Mostly Stable, but only features finished content
+
+Example: InDev Build p2 (3.0.0)
 
 Jcw87's Contact
 -------

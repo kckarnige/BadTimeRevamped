@@ -11,9 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">BattleScreen</layout>
-        <layout order="1">MainMenu</layout>
-        <event-sheet active="1" order="2">MainMenu</event-sheet>
-        <event-sheet order="3">Menus</event-sheet>
+        <layout order="4">MainMenu</layout>
+        <layout order="5">System</layout>
+        <event-sheet active="1" order="1">Globals</event-sheet>
+        <event-sheet order="2">MainMenu</event-sheet>
+        <event-sheet order="3">Battle</event-sheet>
+        <event-sheet order="6">AttackLoader</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -56,6 +59,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/KR/" />
         <folder expanded="1" path="animation-folder/TargetChoice/" />
         <folder expanded="1" path="animation-folder/Strike/" />
+        <folder expanded="1" path="animation-folder/HPBarMask/" />
         <folder expanded="1" path="animation-folder/SansHead/" />
         <folder expanded="1" path="animation-folder/SansBody/" />
         <folder expanded="1" path="animation-folder/SansLegs/" />
@@ -73,7 +77,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MenuItem/" />
         <folder expanded="1" path="animation-folder/HeartShard/" />
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/hpoverlay/" />
+        <folder expanded="1" path="animation-folder/NoHitHeartTrophy/" />
+        <folder expanded="1" path="animation-folder/PlayAgainTrophy/" />
     </folders-expanded>
 </c2uistate>

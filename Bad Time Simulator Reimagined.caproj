@@ -2,10 +2,10 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>you really are a freak, huh?</description>
-    <version>2.5.0</version>
+    <version>a1 (3.0.0)</version>
     <author>KayoticCarnige</author>
     <author-email></author-email>
-    <author-website>https://kckarnige.is-a.dev/BadTimeRevamp</author-website>
+    <author-website>https://kckarnige.is-a.dev/BadTimeRevamped</author-website>
     <app-id>com.kckarnige.btsimre</app-id>
     <unique-id>3pln6vqtdnxgu</unique-id>
     <saved-with-version>28000</saved-with-version>
@@ -296,6 +296,14 @@
                 </instance-variables>
                 <texture />
             </object-type>
+            <object-type name="HPBarMask" sid="878848602777957">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220260722760225" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\kayos\Desktop\hpoverlay.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Enemies">
             <object-type name="SansHead" sid="2086066613273419">
@@ -413,12 +421,17 @@
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
+                    <animation framecount="1" loop="0" name="NervousChuckle" pingpong="0" repeatcount="1" repeatto="0" sid="872531305519445" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <image-point name="Sweat" x="0.5" y="0" />
+                        </frame>
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="SansBody" sid="6007327897630886">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="4" loop="0" name="HandDown" pingpong="0" repeatcount="1" repeatto="0" sid="6043785673298376" speed="15">
+                    <animation framecount="5" loop="0" name="HandDown" pingpong="0" repeatcount="1" repeatto="0" sid="6043785673298376" speed="15">
                         <frame duration="1" hotspotX="0.46875" hotspotY="1">
                             <image-point name="Head" x="0.46875" y="0.4" />
                         </frame>
@@ -433,6 +446,9 @@
                                 <point x="0.984375" y="1" />
                                 <point x="0" y="1" />
                             </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.46875" hotspotY="1">
+                            <image-point name="Head" x="0.46875" y="0.442857" />
                         </frame>
                         <frame duration="1" hotspotX="0.46875" hotspotY="1">
                             <image-point name="Head" x="0.46875" y="0.442857" />
@@ -476,8 +492,14 @@
                         </frame>
                     </animation>
                     <animation framecount="5" loop="0" name="HandLeft" pingpong="0" repeatcount="1" repeatto="0" sid="1931647922176485" speed="15">
-                        <frame duration="1" hotspotX="0.34375" hotspotY="1">
-                            <image-point name="Head" x="0.354167" y="0.125" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.354167">
+                            <image-point name="Head" x="0.875" y="0.354167" />
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.34375" hotspotY="1">
                             <image-point name="Head" x="0.375" y="0.125" />
@@ -560,11 +582,11 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.92" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_sansb_torso_1.png">
                             <image-point name="Head" x="0.5" y="0.2" />
                             <collision-poly>
-                                <point x="0.986111" y="0.884615" />
-                                <point x="0.013889" y="0.884615" />
                                 <point x="0" y="0" />
                                 <point x="0.5" y="0.153846" />
                                 <point x="1" y="0" />
+                                <point x="0.986111" y="0.884615" />
+                                <point x="0.013889" y="0.884615" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1077,19 +1099,26 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="634655233298568">
+        <object-type name="NoHitHeartTrophy" sid="876017697421695">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696644201944027" speed="5">
-                    <frame duration="1" hotspotX="0.503106" hotspotY="0.515152" original-source="C:\Users\kayos\Desktop\CorruptedSprites\hpoverlay.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690995496587519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="hpoverlay" sid="878848602777957">
+        <object-type name="PlayAgainTrophy" sid="265938883209055">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220260722760225" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\kayos\Desktop\hpoverlay.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902462608893944" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1208,6 +1237,7 @@
     </families>
     <layout-folder>
         <layout>BattleScreen.xml</layout>
+        <layout>Credits.xml</layout>
         <layout>System.xml</layout>
         <layout>MainMenu.xml</layout>
     </layout-folder>
@@ -1222,6 +1252,8 @@
         <event-sheet>AttackLoader.xml</event-sheet>
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>Menus.xml</event-sheet>
+        <event-sheet>Fullscreen.xml</event-sheet>
+        <event-sheet>Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="8">

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Globals</name>
     <events>
+        <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">InDev</variable>
         <variable constant="1" name="HEARTMODE_RED" sid="2975789364452609" static="0" type="number">0</variable>
         <variable constant="1" name="HEARTMODE_BLUE" sid="6376919357343526" static="0" type="number">1</variable>
         <variable constant="1" name="MODE_NORMAL" sid="7136545053781815" static="0" type="number">0</variable>
@@ -16,5 +17,11 @@
         <variable constant="0" name="MaxHP" sid="2742940924955148" static="0" type="number">92</variable>
         <variable constant="0" name="KR" sid="2189987320058474" static="0" type="number">0</variable>
         <variable constant="0" name="KR_T" sid="8948293770944489" static="0" type="number">0</variable>
+        <variable constant="0" name="Fullscreen" sid="122939656977634" static="0" type="number">0</variable>
+        <variable constant="0" name="NoHit" sid="170065397378612" static="0" type="number">0</variable>
+        <variable constant="0" name="NoHitTrophyGet" sid="902434184414843" static="0" type="number">0</variable>
+        <variable constant="0" name="PlayAgainTrophy" sid="254505082613689" static="0" type="number">0</variable>
+        <variable constant="0" name="PlayAgainTrophyGet" sid="430913715876498" static="0" type="number">0</variable>
+        <variable constant="0" name="HaveTrophy" sid="564383367054764" static="0" type="number">0</variable>
     </events>
 </c2eventsheet>

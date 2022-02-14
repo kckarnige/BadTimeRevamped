@@ -520,20 +520,12 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-28" name="Set effect parameter" sid="6030058075119234" type="DefaultFont">
-                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">50</param>
+                                <action id="-10" name="Set value" sid="572138094362577" type="MenuItem">
+                                    <param id="0" name="Instance variable">Action</param>
+                                    <param id="1" name="Value">&quot;NoActionSound&quot;</param>
                                 </action>
-                                <action id="-28" name="Set effect parameter" sid="5748182833587719" type="DefaultFont">
-                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">50</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="5671655371911134" type="DefaultFont">
-                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">50</param>
+                                <action id="-16" name="Set opacity" sid="6030058075119234" type="DefaultFont">
+                                    <param id="0" name="Opacity">25</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -541,5 +533,20 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="673851211891324">
+            <conditions>
+                <condition id="0" name="On function" sid="360384469017082" type="Function">
+                    <param id="0" name="Name">&quot;NoActionSound&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="729882676777939" type="Audio">
+                    <param id="0" name="Audio file">PlayerDamaged</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Credits</name>
+    <events>
+        <include>Fullscreen</include>
+        <include>InputManagement</include>
+        <include>Fonts</include>
+        <include>RPGText</include>
+        <include>AttackLoader</include>
+        <include>Menus</include>
+    </events>
+</c2eventsheet>
