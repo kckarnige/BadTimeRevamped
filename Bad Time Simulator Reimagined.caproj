@@ -2,7 +2,7 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>you really are a freak, huh?</description>
-    <version>a1 (3.0.0)</version>
+    <version>a2 (3.0.0)</version>
     <author>KayoticCarnige</author>
     <author-email></author-email>
     <author-website>https://kckarnige.is-a.dev/BadTimeRevamped</author-website>
@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -568,50 +569,35 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1874766620274337" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.962963">
+                            <image-point name="Head" x="0.5" y="0.259259" />
+                            <collision-poly>
+                                <point x="0.0178571" y="0.037037" />
+                                <point x="0.982143" y="0.037037" />
+                                <point x="0.982143" y="0.962963" />
+                                <point x="0.0178571" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrug" pingpong="0" repeatcount="1" repeatto="0" sid="345518523084805" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.962963">
+                            <image-point name="Head" x="0.5" y="0.259259" />
+                            <collision-poly>
+                                <point x="0" y="0.037037" />
+                                <point x="1" y="0.037037" />
+                                <point x="1" y="0.962963" />
+                                <point x="0" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="ShrugRight" pingpong="0" repeatcount="1" repeatto="0" sid="805709879796383" speed="5">
+                        <frame duration="1" hotspotX="0.444444" hotspotY="0.962963">
+                            <image-point name="Head" x="0.444444" y="0.259259" />
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="ShrugLeft" pingpong="0" repeatcount="1" repeatto="0" sid="416076542201963" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Head" x="0.5" y="0.24" />
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="Shrug" pingpong="0" repeatcount="1" repeatto="0" sid="1031353307450106" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.92" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_sansb_torso_1.png">
-                            <image-point name="Head" x="0.5" y="0.2" />
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.5" y="0.153846" />
-                                <point x="1" y="0" />
-                                <point x="0.986111" y="0.884615" />
-                                <point x="0.013889" y="0.884615" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="ShrugRight" pingpong="0" repeatcount="1" repeatto="0" sid="821615962671973" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.96">
-                            <image-point name="Head" x="0.5" y="0.2" />
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.5" y="0.16" />
-                                <point x="1" y="0" />
-                                <point x="0.986111" y="0.92" />
-                                <point x="0.0138889" y="0.92" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="ShrugLeft" pingpong="0" repeatcount="1" repeatto="0" sid="849617667074819" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.96">
-                            <image-point name="Head" x="0.5" y="0.2" />
-                            <collision-poly>
-                                <point x="0.986111" y="0.92" />
-                                <point x="0.013889" y="0.92" />
-                                <point x="0" y="0" />
-                                <point x="0.5" y="0.16" />
-                                <point x="1" y="0" />
-                            </collision-poly>
+                            <image-point name="Head" x="0.5" y="0.222222" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -897,6 +883,10 @@
                 <plugin id="Spritefont2" />
                 <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDamageFont.png" />
             </object-type>
+            <object-type name="DebugFont" sid="243205438385687">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
+            </object-type>
         </object-folder>
         <object-folder name="TouchUI">
             <object-type name="TouchA" sid="117524411669736">
@@ -929,6 +919,39 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539337012850933" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="725969089615135" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="175794181340757" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="352258446750737" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="235942601660145" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1122,6 +1145,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LocalStorage" sid="509492537225772">
+            <plugin id="LocalStorage" />
+        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">
@@ -1152,6 +1178,7 @@
             <members>
                 <member>BattleFont</member>
                 <member>DamageFont</member>
+                <member>DebugFont</member>
                 <member>DefaultFont</member>
                 <member>SansFont</member>
             </members>
@@ -1237,7 +1264,6 @@
     </families>
     <layout-folder>
         <layout>BattleScreen.xml</layout>
-        <layout>Credits.xml</layout>
         <layout>System.xml</layout>
         <layout>MainMenu.xml</layout>
     </layout-folder>
@@ -1252,8 +1278,8 @@
         <event-sheet>AttackLoader.xml</event-sheet>
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>Menus.xml</event-sheet>
-        <event-sheet>Fullscreen.xml</event-sheet>
-        <event-sheet>Credits.xml</event-sheet>
+        <event-sheet>BuildInfo.xml</event-sheet>
+        <event-sheet>SaveData.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="8">
@@ -1284,6 +1310,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="LocalStorage" uid="72" />
     </global-instances>
     <sounds-folder>
         <file name="Ding.ogg" />
@@ -1305,11 +1332,11 @@
         <file name="GasterBlast2.ogg" />
         <file name="ChurchBell.ogg" />
         <file name="snd_wrongvictory.ogg" />
-        <file name="snd_dumbvictory.m4a" />
         <file name="snd_dumbvictory.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="mus_zz_megalovania.ogg" />
+        <file name="MenuMusic.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Battle</name>
     <events>
-        <include>Fullscreen</include>
+        <include>BuildInfo</include>
+        <include>SaveData</include>
         <include>InputManagement</include>
         <include>Fonts</include>
         <include>Items</include>
@@ -85,34 +86,8 @@
                     <param id="0" name="Animation">&quot;ClosedEyes&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-3" name="Create object" sid="324529009561991" type="System">
-                    <param id="0" name="Object to create">BattleFont</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">0</param>
-                    <param id="3" name="Y">0</param>
-                </action>
-                <action id="-10" name="Set value" sid="610552531572933" type="BattleFont">
-                    <param id="0" name="Instance variable">Name</param>
-                    <param id="1" name="Value">&quot;QuitMessage&quot;</param>
-                </action>
-                <action id="-7" name="Set size" sid="384327113696219" type="BattleFont">
-                    <param id="0" name="Width">640</param>
-                    <param id="1" name="Height">64</param>
-                </action>
-                <action id="2" name="Set scale" sid="231075730248467" type="BattleFont">
-                    <param id="0" name="Scale">1.5</param>
-                </action>
-                <action id="0" name="Set text" sid="145764160782090" type="BattleFont">
-                    <param id="0" name="Text">uppercase(buildtype) &amp; &quot; BUILD&quot; &amp; newline &amp; &quot;V &quot; &amp; uppercase(projectversion)</param>
-                </action>
-                <action id="7" name="Set horizontal alignment" sid="180549356995890" type="BattleFont">
-                    <param id="0" name="Horizontal alignment">2</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="103277370359740" type="BattleFont">
-                    <param id="0" name="Opacity">25</param>
-                </action>
-                <action id="-9" name="Set value" sid="859514793020378" type="System">
-                    <param id="0" name="Variable">NoHit</param>
+                <action id="-9" name="Set value" sid="263625476417575" type="System">
+                    <param id="0" name="Variable">PlayAgainTrophy</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -1527,10 +1502,6 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="4143671674600644" type="System">
                     <param id="0" name="Layout">MainMenu</param>
-                </action>
-                <action id="-9" name="Set value" sid="656131757984636" type="System">
-                    <param id="0" name="Variable">PlayAgainTrophy</param>
-                    <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Call function" sid="477918406126445" type="Function">
                     <param id="0" name="Name">&quot;WinJingle&quot;</param>
@@ -8646,9 +8617,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="886095458259709">
-            <conditions />
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>
