@@ -4,7 +4,6 @@
     <name>Battle</name>
     <events>
         <include>BuildInfo</include>
-        <include>SaveData</include>
         <include>InputManagement</include>
         <include>Fonts</include>
         <include>Items</include>
@@ -85,10 +84,6 @@
                 <action id="4" name="Set animation" sid="1205667824253445" type="SansHead">
                     <param id="0" name="Animation">&quot;ClosedEyes&quot;</param>
                     <param id="1" name="From">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="263625476417575" type="System">
-                    <param id="0" name="Variable">PlayAgainTrophy</param>
-                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -1522,7 +1517,7 @@
                         <condition id="-14" name="Compare variable" sid="324090525126756" type="System">
                             <param id="0" name="Variable">HP</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">92</param>
+                            <param id="2" name="Value">69</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1538,8 +1533,8 @@
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="523793993517557" type="System">
                             <param id="0" name="Variable">HP</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">92</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">69</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1550,6 +1545,16 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="278833673762803">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="455887048678932" type="System">
+                            <param id="0" name="Variable">HitCount</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-block>

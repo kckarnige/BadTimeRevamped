@@ -4,7 +4,6 @@
     <name>MainMenu</name>
     <events>
         <include>BuildInfo</include>
-        <include>SaveData</include>
         <include>InputManagement</include>
         <include>Fonts</include>
         <include>RPGText</include>
@@ -20,10 +19,6 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
-                </action>
-                <action id="0" name="Set item" sid="904500059053559" type="LocalStorage">
-                    <param id="0" name="Key">&quot;PlayAgainTrophy&quot;</param>
-                    <param id="1" name="Value">PlayAgainTrophyGet</param>
                 </action>
             </actions>
         </event-block>
@@ -45,8 +40,6 @@
                 <action id="-9" name="Destroy" sid="446536556958593" type="MenuItem" />
                 <action id="-9" name="Destroy" sid="391297228218018" type="DefaultFont" />
                 <action id="-9" name="Destroy" sid="450269158482936" type="BattleFont" />
-                <action id="-9" name="Destroy" sid="743795848010429" type="NoHitHeartTrophy" />
-                <action id="-9" name="Destroy" sid="843901156695393" type="PlayAgainTrophy" />
                 <action id="-3" name="Create object" sid="493187173332363" type="System">
                     <param id="0" name="Object to create">DefaultFont</param>
                     <param id="1" name="Layer">0</param>
@@ -155,8 +148,6 @@
                         <action id="-36" name="Save" sid="481040404181790" type="System">
                             <param id="0" name="Slot">&quot;SaveData&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="944614620627583" type="NoHitHeartTrophy" />
-                        <action id="-9" name="Destroy" sid="974093394594187" type="PlayAgainTrophy" />
                         <action id="-9" name="Destroy" sid="8029955601129796" type="MenuItem" />
                         <action id="-9" name="Destroy" sid="2667792126594554" type="DefaultFont" />
                         <action id="-37" name="Load" sid="428701184244034" type="System">
@@ -241,6 +232,22 @@
                         <action id="7" name="Set horizontal alignment" sid="531986051551602" type="DefaultFont">
                             <param id="0" name="Horizontal alignment">1</param>
                         </action>
+                        <action id="0" name="Call function" sid="293572589689517" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Normal&quot;{###}&quot;MenuModeNormal&quot;{###}255{###}255{###}255</param>
+                        </action>
+                        <action id="0" name="Call function" sid="183761001373680" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}128{###}1{###}&quot;Endless&quot;{###}&quot;MenuModeEndless&quot;{###}255{###}255{###}255</param>
+                        </action>
+                        <action id="0" name="Call function" sid="393713934249652" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}160{###}2{###}&quot;Single Attack&quot;{###}&quot;MenuModeSingle&quot;{###}255{###}255{###}255</param>
+                        </action>
+                        <action id="0" name="Call function" sid="486831436947143" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}192{###}3{###}&quot;Credits&quot;{###}&quot;MenuCredits&quot;{###}255{###}255{###}255</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="249735919736182">
@@ -250,58 +257,9 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Call function" sid="293572589689517" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Normal&quot;{###}&quot;MenuModeNormal&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="183761001373680" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}128{###}1{###}&quot;Endless&quot;{###}&quot;MenuModeEndless&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="393713934249652" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}160{###}2{###}&quot;Single Attack&quot;{###}&quot;MenuModeSingle&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="260153023353325" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}192{###}3{###}&quot;Achievements&quot;{###}&quot;MenuAchievements&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="486831436947143" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Credits&quot;{###}&quot;MenuCredits&quot;{###}255{###}255{###}255</param>
-                                </action>
                                 <action id="0" name="Call function" sid="613103418044913" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}256{###}5{###}&quot;Download!&quot;{###}&quot;MenuDownload&quot;{###}255{###}255{###}0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="133705620418424">
-                            <conditions>
-                                <condition id="-32" inverted="1" name="Is on platform" sid="406489923355031" type="System">
-                                    <param id="0" name="Platform">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="894135219616427" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Normal&quot;{###}&quot;MenuModeNormal&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="839554237912280" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}128{###}1{###}&quot;Endless&quot;{###}&quot;MenuModeEndless&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="734968904676374" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}160{###}2{###}&quot;Single Attack&quot;{###}&quot;MenuModeSingle&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="857912139129599" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}192{###}3{###}&quot;Achievements&quot;{###}&quot;MenuAchievements&quot;{###}255{###}255{###}255</param>
-                                </action>
-                                <action id="0" name="Call function" sid="705000772999497" type="Function">
-                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Credits&quot;{###}&quot;MenuCredits&quot;{###}255{###}255{###}255</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Download!&quot;{###}&quot;MenuDownload&quot;{###}255{###}255{###}0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -707,226 +665,6 @@
                     <param id="0" name="Javascript">&quot;location.reload(true)&quot;</param>
                 </action>
             </actions>
-        </event-block>
-        <event-group description="" sid="916770933748238" title="Achievements" />
-        <event-block sid="130416313003790">
-            <conditions>
-                <condition id="0" name="On function" sid="653514569059961" type="Function">
-                    <param id="0" name="Name">&quot;MenuAchievements&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="451073189750594" type="MenuItem" />
-                <action id="-9" name="Destroy" sid="701408276364641" type="DefaultFont" />
-                <action id="-9" name="Destroy" sid="745053353604530" type="BattleFont" />
-                <action id="0" name="Call function" sid="887687776742523" type="Function">
-                    <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
-                </action>
-                <action id="-3" name="Create object" sid="432369420616784" type="System">
-                    <param id="0" name="Object to create">DefaultFont</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">0</param>
-                    <param id="3" name="Y">32</param>
-                </action>
-                <action id="-7" name="Set size" sid="818288266458908" type="DefaultFont">
-                    <param id="0" name="Width">640</param>
-                    <param id="1" name="Height">32</param>
-                </action>
-                <action id="2" name="Set scale" sid="168901780464117" type="DefaultFont">
-                    <param id="0" name="Scale">2</param>
-                </action>
-                <action id="0" name="Set text" sid="202420351910495" type="DefaultFont">
-                    <param id="0" name="Text">&quot;Achievements!&quot;</param>
-                </action>
-                <action id="7" name="Set horizontal alignment" sid="188659692490874" type="DefaultFont">
-                    <param id="0" name="Horizontal alignment">1</param>
-                </action>
-                <action id="-28" name="Set effect parameter" sid="124688069558140" type="DefaultFont">
-                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                    <param id="1" name="Parameter index">0</param>
-                    <param id="2" name="Value">255</param>
-                </action>
-                <action id="-28" name="Set effect parameter" sid="547441002123945" type="DefaultFont">
-                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                    <param id="1" name="Parameter index">1</param>
-                    <param id="2" name="Value">255</param>
-                </action>
-                <action id="-28" name="Set effect parameter" sid="136062415582219" type="DefaultFont">
-                    <param id="0" name="Effect">&quot;Tint&quot;</param>
-                    <param id="1" name="Parameter index">2</param>
-                    <param id="2" name="Value">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="141775806024862" type="PlayerHeart">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-3" name="Create object" sid="233815719901972" type="System">
-                    <param id="0" name="Object to create">DefaultFont</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">0</param>
-                    <param id="3" name="Y">16</param>
-                </action>
-                <action id="-5" name="Set width" sid="156483436678658" type="DefaultFont">
-                    <param id="0" name="Width">640</param>
-                </action>
-                <action id="-6" name="Set height" sid="831911691156313" type="DefaultFont">
-                    <param id="0" name="Height">32</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="674093157608095" type="DefaultFont">
-                    <param id="0" name="Opacity">25</param>
-                </action>
-                <action id="2" name="Set scale" sid="745539994764579" type="DefaultFont">
-                    <param id="0" name="Scale">1</param>
-                </action>
-                <action id="0" name="Set text" sid="587757394378081" type="DefaultFont">
-                    <param id="0" name="Text">&quot;[X] / [Shift] / (B) to go back&quot;</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="433925939957407">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="100648404278827" type="System">
-                            <param id="0" name="Variable">HaveTrophy</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="765505765477321" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">80</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="380165326973499" type="DefaultFont">
-                            <param id="0" name="Width">640</param>
-                            <param id="1" name="Height">64</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="256594012610848" type="DefaultFont">
-                            <param id="0" name="Scale">1.5</param>
-                        </action>
-                        <action id="7" name="Set horizontal alignment" sid="302339415057094" type="DefaultFont">
-                            <param id="0" name="Horizontal alignment">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="742817433200761" type="DefaultFont">
-                            <param id="0" name="Text">&quot;But nobody came.&quot;</param>
-                        </action>
-                        <action id="-16" name="Set opacity" sid="956539055488877" type="DefaultFont">
-                            <param id="0" name="Opacity">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-group description="" sid="672192368615310" title="&apos;&apos;No-Hit&apos;&apos; Achievement" />
-                <event-block sid="782343235059190">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="374199397218261" type="System">
-                            <param id="0" name="Variable">HitCount</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="812753956545883" type="System">
-                            <param id="0" name="Variable">NoHitTrophyGet</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="655563093717806">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="737978678435218" type="System">
-                            <param id="0" name="Variable">NoHitTrophyGet</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="424261995572105" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">250</param>
-                            <param id="3" name="Y">80</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="242130435681875" type="DefaultFont">
-                            <param id="0" name="Width">640</param>
-                            <param id="1" name="Height">64</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="620232902811558" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="131995838917693" type="DefaultFont">
-                            <param id="0" name="Text">&quot;&apos;&apos;No-Hit!&apos;&apos; Achievement&quot;</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="966688267834557" type="System">
-                            <param id="0" name="Object to create">NoHitHeartTrophy</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="359292864612341" type="NoHitHeartTrophy">
-                            <param id="0" name="X">DefaultFont.X - 16</param>
-                            <param id="1" name="Y">DefaultFont.Y  + 6</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="132953553029161" type="System">
-                            <param id="0" name="Variable">HaveTrophy</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-group description="" sid="833919776256777" title="&apos;&apos;Can we play again?&apos;&apos; Achievement" />
-                <event-block sid="167982345354342">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="987196353395085" type="System">
-                            <param id="0" name="Variable">PlayAgainTrophy</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="877936131378946" type="System">
-                            <param id="0" name="Variable">PlayAgainTrophyGet</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="492784991000986">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="696552026173149" type="System">
-                            <param id="0" name="Variable">PlayAgainTrophyGet</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="546469894733427" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">250</param>
-                            <param id="3" name="Y">96</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="554382579324301" type="DefaultFont">
-                            <param id="0" name="Width">640</param>
-                            <param id="1" name="Height">64</param>
-                        </action>
-                        <action id="2" name="Set scale" sid="320117704261040" type="DefaultFont">
-                            <param id="0" name="Scale">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="827693503678749" type="DefaultFont">
-                            <param id="0" name="Text">&quot;&apos;&apos;Can we play again?&apos;&apos; Achievement&quot;</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="195803823371428" type="System">
-                            <param id="0" name="Object to create">PlayAgainTrophy</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="121987400197611" type="PlayAgainTrophy">
-                            <param id="0" name="X">DefaultFont.X - 16</param>
-                            <param id="1" name="Y">DefaultFont.Y  + 6</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-group description="" sid="655094766473867" title="Credits" />
         <event-block sid="103209586689675">

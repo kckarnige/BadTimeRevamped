@@ -10,15 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">MainMenu</layout>
+        <layout active="1" order="0">MainMenu</layout>
         <layout order="1">BattleScreen</layout>
         <layout order="5">System</layout>
-        <event-sheet active="1" order="2">MainMenu</event-sheet>
+        <event-sheet order="2">MainMenu</event-sheet>
         <event-sheet order="3">Battle</event-sheet>
         <event-sheet order="4">BuildInfo</event-sheet>
         <event-sheet order="6">InputManagement</event-sheet>
-        <event-sheet order="7">SaveData</event-sheet>
-        <event-sheet order="8">Globals</event-sheet>
+        <event-sheet order="7">Globals</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -80,6 +79,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/HeartShard/" />
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
         <folder expanded="1" path="animation-folder/NoHitHeartTrophy/" />
-        <folder expanded="1" path="animation-folder/PlayAgainTrophy/" />
     </folders-expanded>
 </c2uistate>
