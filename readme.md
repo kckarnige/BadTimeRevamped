@@ -1,4 +1,4 @@
-<h1 align="center">Bad Time Simulator: Reimagined</h1>
+<h1 align="center">Bad Time Simulator: Reimagined [Development Branch]</h1>
 
 This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-fight), by [Jcw87](https://github.com/Jcw87).
 
