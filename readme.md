@@ -1,26 +1,15 @@
-<h1 align="center">Bad Time Simulator: Reimagined [Development Branch]</h1>
+<h1 align="center">Bad Time Simulator: Reimagined</h1>
 
 This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-fight), by [Jcw87](https://github.com/Jcw87).
 
 The **February 2022 3.0.0** preview can be played [here](https://kckarnige.is-a.dev/BadTimeRevamped/preview-Feb2022/) though, the full 3.0.0 version has been [released](https://kckarnige.is-a.dev/BadTimeRevamped)!
+The web version can be played [here](https://kckarnige.is-a.dev/BadTimeRevamped), and the downloadable versions can be found [here](https://github.com/kckarnige/BadTimeRevamped/releases).
 
 This mod and the original Bad Time Simulator were made in [Construct 2](https://www.scirra.com/construct2).
 
 Known Issues
 ------------
-- Using an outdated build of Bad Time Simulator [WILL NOT BE RESOLVED] (Latest commit as of writing, May 29, 2021: Commit 33)
-
-Version Info
---------------------------------
-I'm not releasing any builds on the main branch, nor for offline use until they are stable and ready to be released.
-
-In the meantime, this branch will be dedicated to InDev builds, with the letter indicating the stage of development, and the number next to it being the build number.
-- A = Alpha/Unstable
-- B = Beta/Mostly Stable
-- S = Stable, but awaiting a few finishing touches)
-- P = Preview/Mostly Stable, but only features finished content
-
-Example: InDev Build p2 (4.2.0)
+- Not using the latest build on Bad Time Simulator (Latest commit as of writing, May 29, 2021: Commit 33)
 
 Jcw87's Contact
 -------
