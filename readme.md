@@ -2,14 +2,13 @@
 
 This project is a mod of [Bad Time Simulator](https://github.com/Jcw87/c2-sans-fight), by [Jcw87](https://github.com/Jcw87).
 
-The **February 2022 3.0.0** preview can be played [here](https://kckarnige.is-a.dev/BadTimeRevamped/preview-Feb2022/).
+The **February 2022 3.0.0** preview can be played [here](https://kckarnige.is-a.dev/BadTimeRevamped/preview-Feb2022/) though, the full 3.0.0 version has been [released](https://kckarnige.is-a.dev/BadTimeRevamped)!
 
 This mod and the original Bad Time Simulator were made in [Construct 2](https://www.scirra.com/construct2).
 
 Known Issues
 ------------
 - Using an outdated build of Bad Time Simulator [WILL NOT BE RESOLVED] (Latest commit as of writing, May 29, 2021: Commit 33)
-- ~~Achievements are not working properly~~ *Achievements are going to be removed*
 
 Version Info
 --------------------------------

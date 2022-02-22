@@ -712,6 +712,7 @@
                         <Action></Action>
                         <BackAction></BackAction>
                         <Created>false</Created>
+                        <Select>false</Select>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -769,7 +770,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
+                        <x>311.398895264</x>
                         <y>352</y>
                         <z>0</z>
                         <width>14</width>
@@ -777,7 +778,7 @@
                         <depth>0</depth>
                         <hotspotX>-1</hotspotX>
                         <hotspotY>5.666666508</hotspotY>
-                        <angle>0.380507767</angle>
+                        <angle>-0.683948576</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1050,7 +1051,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="NoHitHeartTrophy" uid="67">
+                <instance type="NoHitHeartBadge" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1117,6 +1118,50 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MenuImage" uid="70">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>482</x>
+                        <y>104</y>
+                        <z>0</z>
+                        <width>118</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.614583313</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MenuImageFrame" uid="73">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>482</x>
+                        <y>104</y>
+                        <z>0</z>
+                        <width>118</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.614583313</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

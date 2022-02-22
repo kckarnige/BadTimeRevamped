@@ -2,7 +2,7 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>you really are a freak, huh?</description>
-    <version>a3 (3.0.0)</version>
+    <version>3.0.0</version>
     <author>KayoticCarnige</author>
     <author-email></author-email>
     <author-website>https://kckarnige.is-a.dev/BadTimeRevamped</author-website>
@@ -18,6 +18,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -356,7 +357,7 @@
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="BlueEye" pingpong="0" repeatcount="1" repeatto="0" sid="4492125680738175" speed="10">
+                    <animation framecount="2" loop="1" name="BlueEye" pingpong="0" repeatcount="1" repeatto="0" sid="4492125680738175" speed="4">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
@@ -364,7 +365,7 @@
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="BlueWink" pingpong="0" repeatcount="1" repeatto="0" sid="943129627530776" speed="10">
+                    <animation framecount="2" loop="1" name="BlueWink" pingpong="0" repeatcount="1" repeatto="0" sid="943129627530776" speed="4">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
@@ -1025,6 +1026,16 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="1" name="BattleUI" pingpong="0" repeatcount="1" repeatto="0" sid="954327709619644" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0555556" y="0.944444" />
+                            <point x="0.0555556" y="0.0555556" />
+                            <point x="0.944444" y="0.0555556" />
+                            <point x="0.944444" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type global="1" name="AttackList" sid="7966075756587832">
@@ -1038,6 +1049,7 @@
                 <instance-variable name="Action" sid="8424291498582479" type="string" />
                 <instance-variable name="BackAction" sid="3202944525291714" type="string" />
                 <instance-variable name="Created" sid="1711039613963512" type="boolean" />
+                <instance-variable name="Select" sid="414844311335874" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155770205370032" speed="5">
@@ -1122,7 +1134,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="NoHitHeartTrophy" sid="876017697421695">
+        <object-type name="NoHitHeartBadge" sid="876017697421695">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690995496587519" speed="5">
@@ -1132,6 +1144,57 @@
         </object-type>
         <object-type name="LocalStorage" sid="509492537225772">
             <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="MenuImage" sid="907468671155629">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809140242372622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuModeNormal" pingpong="0" repeatcount="1" repeatto="0" sid="662920944699968" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuModeSingle" pingpong="0" repeatcount="1" repeatto="0" sid="736879661493588" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuModeEndless" pingpong="0" repeatcount="1" repeatto="0" sid="607218591718923" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuCredits" pingpong="0" repeatcount="1" repeatto="0" sid="886422053377634" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuDownload" pingpong="0" repeatcount="1" repeatto="0" sid="990194683671973" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuEndless0" pingpong="0" repeatcount="1" repeatto="0" sid="541575191514511" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuEndless1" pingpong="0" repeatcount="1" repeatto="0" sid="590195023979166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="CutestPlaceholder" pingpong="0" repeatcount="1" repeatto="0" sid="850781183514612" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuImageFrame" sid="921318135183984">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289589747655445" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="772136693008832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248518819035731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="360122137704937">
+            <plugin id="Mouse" />
         </object-type>
     </object-folder>
     <families>
@@ -1264,6 +1327,7 @@
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>Menus.xml</event-sheet>
         <event-sheet>BuildInfo.xml</event-sheet>
+        <event-sheet>No-Hit.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="8">
@@ -1295,6 +1359,7 @@
             </properties>
         </global-instance>
         <global-instance type="LocalStorage" uid="72" />
+        <global-instance type="Mouse" uid="74" />
     </global-instances>
     <sounds-folder>
         <file name="Ding.ogg" />
@@ -1317,11 +1382,10 @@
         <file name="ChurchBell.ogg" />
         <file name="snd_wrongvictory.ogg" />
         <file name="snd_dumbvictory.ogg" />
-    </sounds-folder>
-    <music-folder>
+        <file name="mus_options_fall.ogg" />
         <file name="mus_zz_megalovania.ogg" />
-        <file name="MenuMusic.ogg" />
-    </music-folder>
+    </sounds-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
