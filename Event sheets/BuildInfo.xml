@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>BuildInfo</name>
+    <events>
+        <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">Stable</variable>
+        <variable constant="0" name="DesktopBuild" sid="767752196151469" static="0" type="number">0</variable>
+        <variable constant="0" name="ShowBuildInfo" sid="433491871019591" static="0" type="number">0</variable>
+        <event-group description="" sid="463479059386579" title="Show Build Info" />
+        <event-block sid="171781272408395">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="127541628242272" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="192408445736983">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="607523004533086" type="System">
+                            <param id="0" name="Variable">ShowBuildInfo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="592724255525368" type="System">
+                            <param id="0" name="Object to create">DebugFont</param>
+                            <param id="1" name="Layer">&quot;Debug&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="250219036098709" type="DebugFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Value">&quot;BuildInfo&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="327180546288130" type="DebugFont">
+                            <param id="0" name="Width">640</param>
+                            <param id="1" name="Height">64</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="703483511043824" type="DebugFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="384472614238672" type="DebugFont">
+                            <param id="0" name="Text">uppercase(buildtype) &amp; &quot; BUILD&quot; &amp; newline &amp; &quot;V &quot; &amp; uppercase(projectversion)</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="697029533008162" type="DebugFont">
+                            <param id="0" name="Horizontal alignment">2</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="448685329158910" type="DebugFont">
+                            <param id="0" name="Opacity">25</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="916532625065565">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="400818467219155" type="Keyboard">
+                    <param id="0" name="Key">115</param>
+                </condition>
+                <condition id="10" inverted="1" name="Is fullscreen" sid="847756625748854" type="Browser" />
+                <condition id="-14" name="Compare variable" sid="698622388357052" type="System">
+                    <param id="0" name="Variable">DesktopBuild</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="392845350535686" type="Browser">
+                    <param id="0" name="Mode">4</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="585314908346884" type="Mouse">
+                    <param id="0" name="Cursor style">7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="388701991222791">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="243969203039654" type="Keyboard">
+                    <param id="0" name="Key">115</param>
+                </condition>
+                <condition id="10" name="Is fullscreen" sid="297686962917870" type="Browser" />
+                <condition id="-14" name="Compare variable" sid="142528414122158" type="System">
+                    <param id="0" name="Variable">DesktopBuild</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Cancel fullscreen" sid="704736625943501" type="Browser" />
+                <action id="2" name="Focus" sid="680560223477410" type="Browser" />
+                <action id="0" name="Set cursor style" sid="364911343665783" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

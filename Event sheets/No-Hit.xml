@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>No-Hit</name>
+    <events>
+        <variable constant="0" name="NoHitBadge" sid="631287064197904" static="0" type="number">0</variable>
+        <event-block sid="542382111779553">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="827524719480521" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="339658918669135" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="682101837048218">
+            <conditions>
+                <condition id="9" name="On item exists" sid="309130314864724" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="226098735852642" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
+                    <param id="1" name="Value">NoHitBadge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="533799680858820">
+            <conditions>
+                <condition id="10" name="On item missing" sid="266625573946455" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="280696120730632" type="LocalStorage">
+                    <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="9" name="Reload" sid="432915123326853" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

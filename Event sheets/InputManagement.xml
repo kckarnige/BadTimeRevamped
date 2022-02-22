@@ -218,7 +218,7 @@
                             <conditions>
                                 <condition id="3" name="Is button down" sid="8796805238976963" type="Gamepad">
                                     <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">2</param>
+                                    <param id="1" name="Button">1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -419,7 +419,7 @@
                                                     <param id="0" name="Scale">2</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="989636852540768" type="DefaultFont">
-                                                    <param id="0" name="Text">&quot;Don&apos;t play on mobile!&quot; &amp; newline &amp; &quot;You have been warned!&quot;</param>
+                                                    <param id="0" name="Text">&quot;Don&apos;t play on mobile!&quot; &amp; newline &amp; &quot;If want to, use a gamepad!&quot;</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="713870393895474" type="System">
                                                     <param id="0" name="Variable">MobileWarned</param>
@@ -435,7 +435,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="10" name="Request fullscreen" sid="904088374612251" type="Browser">
-                                            <param id="0" name="Mode">4</param>
+                                            <param id="0" name="Mode">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -530,6 +530,9 @@
                                                 <action id="-10" name="Set value" sid="797711746427196" type="TouchDPad">
                                                     <param id="0" name="Instance variable">TouchID</param>
                                                     <param id="1" name="Value">Touch.TouchID</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="793021523895461" type="TouchDPad">
+                                                    <param id="0" name="Scale">3</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -654,18 +657,52 @@
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block sid="849498678331174">
+                                        <event-block any="1" sid="849498678331174">
                                             <conditions>
-                                                <condition id="-8" name="Compare two values" sid="149136532260509" type="System">
+                                                <condition id="-8" inverted="1" name="Compare two values" sid="149136532260509" type="System">
+                                                    <param id="0" name="First value">Y</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Second value">TouchDPad.Y - TOUCH_ZONE</param>
+                                                </condition>
+                                                <condition id="-8" inverted="1" name="Compare two values" sid="245292466831294" type="System">
+                                                    <param id="0" name="First value">Y</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Second value">TouchDPad.Y + TOUCH_ZONE</param>
+                                                </condition>
+                                                <condition id="-8" inverted="1" name="Compare two values" sid="967450236767768" type="System">
+                                                    <param id="0" name="First value">X</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Second value">TouchDPad.X - TOUCH_ZONE</param>
+                                                </condition>
+                                                <condition id="-8" inverted="1" name="Compare two values" sid="544315017466480" type="System">
+                                                    <param id="0" name="First value">X</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Second value">TouchDPad.X + TOUCH_ZONE</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="863716251869027" type="TouchDPad">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="603847719421748">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="258325089012481" type="System">
                                                     <param id="0" name="First value">Y</param>
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Second value">TouchDPad.Y - TOUCH_ZONE</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-10" name="Set value" sid="773694582267750" type="VPad">
+                                                <action id="-10" name="Set value" sid="481648395770360" type="VPad">
                                                     <param id="0" name="Instance variable">Up</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="920717036189369" type="TouchDPad">
+                                                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                                                    <param id="1" name="From">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -682,6 +719,10 @@
                                                     <param id="0" name="Instance variable">Down</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="4" name="Set animation" sid="570453754039380" type="TouchDPad">
+                                                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="833954426944866">
@@ -697,6 +738,10 @@
                                                     <param id="0" name="Instance variable">Left</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="4" name="Set animation" sid="424793745786569" type="TouchDPad">
+                                                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="590163719983862">
@@ -711,6 +756,10 @@
                                                 <action id="-10" name="Set value" sid="883303417801571" type="VPad">
                                                     <param id="0" name="Instance variable">Right</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="220620936006147" type="TouchDPad">
+                                                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                                                    <param id="1" name="From">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>

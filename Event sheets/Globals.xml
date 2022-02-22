@@ -16,5 +16,7 @@
         <variable constant="0" name="MaxHP" sid="2742940924955148" static="0" type="number">92</variable>
         <variable constant="0" name="KR" sid="2189987320058474" static="0" type="number">0</variable>
         <variable constant="0" name="KR_T" sid="8948293770944489" static="0" type="number">0</variable>
+        <variable constant="0" name="Fullscreen" sid="122939656977634" static="0" type="number">0</variable>
+        <variable constant="0" name="MouseVisible" sid="109584634798187" static="0" type="number">0</variable>
     </events>
 </c2eventsheet>

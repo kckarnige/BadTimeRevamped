@@ -27,6 +27,30 @@
                 </action>
             </actions>
         </event-block>
+        <event-block any="1" sid="346169983880293">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="695417942706103" type="System" />
+                <condition id="-18" name="On created" sid="728908469235428" type="DebugFont" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set character width" sid="945816706044283" type="DebugFont">
+                    <param id="0" name="Character">&quot;!&quot;&quot;#%-/0123456789&lt;=&gt;?ABCDEFGHIJKLNOPQRSTUVXYZ[\]_&quot;</param>
+                    <param id="1" name="Width">5</param>
+                </action>
+                <action id="5" name="Set character width" sid="791744540303468" type="DebugFont">
+                    <param id="0" name="Character">&quot;&quot;&quot;()&lt;&gt;[]&quot;</param>
+                    <param id="1" name="Width">4</param>
+                </action>
+                <action id="5" name="Set character width" sid="168770058455559" type="DebugFont">
+                    <param id="0" name="Character">&quot; -&quot;</param>
+                    <param id="1" name="Width">3</param>
+                </action>
+                <action id="5" name="Set character width" sid="658772921148348" type="DebugFont">
+                    <param id="0" name="Character">&quot;&apos;,.:;&quot;</param>
+                    <param id="1" name="Width">2</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block any="1" sid="4795387788698696">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4998938932169473" type="System" />
@@ -62,7 +86,7 @@
                     <param id="1" name="Width">9</param>
                 </action>
                 <action id="5" name="Set character width" sid="8743203490419181" type="DefaultFont">
-                    <param id="0" name="Character">&quot; $*+-./0123456789=?@ABCDEFGHIJKLNOPQRSTUVXYZ\^abcdefghijklnopqrstuvxyz&quot;</param>
+                    <param id="0" name="Character">&quot; $*+-/0123456789=?@ABCDEFGHIJKLNOPQRSTUVXYZ\^abcdefghijklnopqrstuvxyz&quot;</param>
                     <param id="1" name="Width">8</param>
                 </action>
                 <action id="5" name="Set character width" sid="9617802801173315" type="DefaultFont">
@@ -74,7 +98,7 @@
                     <param id="1" name="Width">6</param>
                 </action>
                 <action id="5" name="Set character width" sid="8426537828249007" type="DefaultFont">
-                    <param id="0" name="Character">&quot;`&quot;</param>
+                    <param id="0" name="Character">&quot;.`&quot;</param>
                     <param id="1" name="Width">5</param>
                 </action>
                 <action id="5" name="Set character width" sid="2731391145283345" type="DefaultFont">

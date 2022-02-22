@@ -2,10 +2,10 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>you really are a freak, huh?</description>
-    <version>2.0.0.0</version>
+    <version>3.0.0</version>
     <author>KayoticCarnige</author>
     <author-email></author-email>
-    <author-website>https://kckarnige.is-a.dev/BadTimeRevamp</author-website>
+    <author-website>https://kckarnige.is-a.dev/BadTimeRevamped</author-website>
     <app-id>com.kckarnige.btsimre</app-id>
     <unique-id>3pln6vqtdnxgu</unique-id>
     <saved-with-version>28000</saved-with-version>
@@ -17,6 +17,8 @@
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -55,7 +57,7 @@
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">NW.js</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -122,12 +124,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7839461660390996" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="5181432374441549" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_actbt_center_1.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -137,12 +139,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2415236592226629" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="5506998997872373" speed="5">
+                    <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="5506998997872373" speed="1">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_fightbt_1.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -152,12 +154,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4560456212490265" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="7286896709592169" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_itembt_1.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -167,12 +169,12 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5127942938396299" speed="5">
                         <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\kayos\Desktop\Trash\Undertale\Construct 2\Animations\PlayerHeart\Default\000.png">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="4270938902148832" speed="5">
                         <frame duration="1" hotspotX="1" hotspotY="0">
-                            <image-point name="Heart" x="0.145455" y="0.5" />
+                            <image-point name="Heart" x="0.5" y="0.5" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -296,6 +298,14 @@
                 </instance-variables>
                 <texture />
             </object-type>
+            <object-type name="HPBarMask" sid="878848602777957">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220260722760225" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\kayos\Desktop\hpoverlay.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Enemies">
             <object-type name="SansHead" sid="2086066613273419">
@@ -347,7 +357,7 @@
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="BlueEye" pingpong="0" repeatcount="1" repeatto="0" sid="4492125680738175" speed="10">
+                    <animation framecount="2" loop="1" name="BlueEye" pingpong="0" repeatcount="1" repeatto="0" sid="4492125680738175" speed="4">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
@@ -355,7 +365,7 @@
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="BlueWink" pingpong="0" repeatcount="1" repeatto="0" sid="943129627530776" speed="10">
+                    <animation framecount="2" loop="1" name="BlueWink" pingpong="0" repeatcount="1" repeatto="0" sid="943129627530776" speed="4">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
@@ -408,15 +418,12 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="Laugh" pingpong="0" repeatcount="1" repeatto="0" sid="2276838282479599" speed="6">
-                        <frame duration="25" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Sweat" x="0.5" y="0" />
-                        </frame>
+                    <animation framecount="1" loop="0" name="Chuckle" pingpong="0" repeatcount="1" repeatto="0" sid="661026087497288" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Chuckle" pingpong="0" repeatcount="1" repeatto="0" sid="661026087497288" speed="5">
+                    <animation framecount="1" loop="0" name="NervousChuckle" pingpong="0" repeatcount="1" repeatto="0" sid="872531305519445" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
                             <image-point name="Sweat" x="0.5" y="0" />
                         </frame>
@@ -426,7 +433,7 @@
             <object-type name="SansBody" sid="6007327897630886">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="4" loop="0" name="HandDown" pingpong="0" repeatcount="1" repeatto="0" sid="6043785673298376" speed="15">
+                    <animation framecount="5" loop="0" name="HandDown" pingpong="0" repeatcount="1" repeatto="0" sid="6043785673298376" speed="15">
                         <frame duration="1" hotspotX="0.46875" hotspotY="1">
                             <image-point name="Head" x="0.46875" y="0.4" />
                         </frame>
@@ -441,6 +448,9 @@
                                 <point x="0.984375" y="1" />
                                 <point x="0" y="1" />
                             </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.46875" hotspotY="1">
+                            <image-point name="Head" x="0.46875" y="0.442857" />
                         </frame>
                         <frame duration="1" hotspotX="0.46875" hotspotY="1">
                             <image-point name="Head" x="0.46875" y="0.442857" />
@@ -484,8 +494,14 @@
                         </frame>
                     </animation>
                     <animation framecount="5" loop="0" name="HandLeft" pingpong="0" repeatcount="1" repeatto="0" sid="1931647922176485" speed="15">
-                        <frame duration="1" hotspotX="0.34375" hotspotY="1">
-                            <image-point name="Head" x="0.354167" y="0.125" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.354167">
+                            <image-point name="Head" x="0.875" y="0.354167" />
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.34375" hotspotY="1">
                             <image-point name="Head" x="0.375" y="0.125" />
@@ -554,50 +570,35 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1874766620274337" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.962963">
+                            <image-point name="Head" x="0.5" y="0.259259" />
+                            <collision-poly>
+                                <point x="0.0178571" y="0.037037" />
+                                <point x="0.982143" y="0.037037" />
+                                <point x="0.982143" y="0.962963" />
+                                <point x="0.0178571" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrug" pingpong="0" repeatcount="1" repeatto="0" sid="345518523084805" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.962963">
+                            <image-point name="Head" x="0.5" y="0.259259" />
+                            <collision-poly>
+                                <point x="0" y="0.037037" />
+                                <point x="1" y="0.037037" />
+                                <point x="1" y="0.962963" />
+                                <point x="0" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="ShrugRight" pingpong="0" repeatcount="1" repeatto="0" sid="805709879796383" speed="5">
+                        <frame duration="1" hotspotX="0.444444" hotspotY="0.962963">
+                            <image-point name="Head" x="0.444444" y="0.259259" />
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="ShrugLeft" pingpong="0" repeatcount="1" repeatto="0" sid="416076542201963" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="1">
-                            <image-point name="Head" x="0.5" y="0.24" />
-                            <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="Shrug" pingpong="0" repeatcount="1" repeatto="0" sid="1031353307450106" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.92" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_sansb_torso_1.png">
-                            <image-point name="Head" x="0.5" y="0.2" />
-                            <collision-poly>
-                                <point x="0.986111" y="0.884615" />
-                                <point x="0.013889" y="0.884615" />
-                                <point x="0" y="0" />
-                                <point x="0.5" y="0.153846" />
-                                <point x="1" y="0" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="ShrugRight" pingpong="0" repeatcount="1" repeatto="0" sid="821615962671973" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.96">
-                            <image-point name="Head" x="0.5" y="0.2" />
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.5" y="0.16" />
-                                <point x="1" y="0" />
-                                <point x="0.986111" y="0.92" />
-                                <point x="0.0138889" y="0.92" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="1" loop="0" name="ShrugLeft" pingpong="0" repeatcount="1" repeatto="0" sid="849617667074819" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.96">
-                            <image-point name="Head" x="0.5" y="0.2" />
-                            <collision-poly>
-                                <point x="0.986111" y="0.92" />
-                                <point x="0.013889" y="0.92" />
-                                <point x="0" y="0" />
-                                <point x="0.5" y="0.16" />
-                                <point x="1" y="0" />
-                            </collision-poly>
+                            <image-point name="Head" x="0.5" y="0.222222" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -883,6 +884,10 @@
                 <plugin id="Spritefont2" />
                 <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDamageFont.png" />
             </object-type>
+            <object-type name="DebugFont" sid="243205438385687">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
+            </object-type>
         </object-folder>
         <object-folder name="TouchUI">
             <object-type name="TouchA" sid="117524411669736">
@@ -915,6 +920,39 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539337012850933" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="725969089615135" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="175794181340757" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="352258446750737" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="235942601660145" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -988,6 +1026,16 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="1" name="BattleUI" pingpong="0" repeatcount="1" repeatto="0" sid="954327709619644" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0555556" y="0.944444" />
+                            <point x="0.0555556" y="0.0555556" />
+                            <point x="0.944444" y="0.0555556" />
+                            <point x="0.944444" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type global="1" name="AttackList" sid="7966075756587832">
@@ -1001,6 +1049,7 @@
                 <instance-variable name="Action" sid="8424291498582479" type="string" />
                 <instance-variable name="BackAction" sid="3202944525291714" type="string" />
                 <instance-variable name="Created" sid="1711039613963512" type="boolean" />
+                <instance-variable name="Select" sid="414844311335874" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155770205370032" speed="5">
@@ -1085,39 +1134,67 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="634655233298568">
+        <object-type name="NoHitHeartBadge" sid="876017697421695">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696644201944027" speed="5">
-                    <frame duration="1" hotspotX="0.503106" hotspotY="0.515152" original-source="C:\Users\kayos\Desktop\CorruptedSprites\hpoverlay.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690995496587519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="hpoverlay" sid="878848602777957">
+        <object-type name="LocalStorage" sid="509492537225772">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="MenuImage" sid="907468671155629">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220260722760225" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="C:\Users\kayos\Desktop\hpoverlay.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809140242372622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuModeNormal" pingpong="0" repeatcount="1" repeatto="0" sid="662920944699968" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuModeSingle" pingpong="0" repeatcount="1" repeatto="0" sid="736879661493588" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuModeEndless" pingpong="0" repeatcount="1" repeatto="0" sid="607218591718923" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuCredits" pingpong="0" repeatcount="1" repeatto="0" sid="886422053377634" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuDownload" pingpong="0" repeatcount="1" repeatto="0" sid="990194683671973" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuEndless0" pingpong="0" repeatcount="1" repeatto="0" sid="541575191514511" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="MenuEndless1" pingpong="0" repeatcount="1" repeatto="0" sid="590195023979166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
+                </animation>
+                <animation framecount="1" loop="0" name="CutestPlaceholder" pingpong="0" repeatcount="1" repeatto="0" sid="850781183514612" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="uiactsheet" sid="999936379715525">
+        <object-type name="MenuImageFrame" sid="921318135183984">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812749842762054" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kayos\Desktop\CorruptedSprites\uiact-sheet0.png">
-                        <collision-poly>
-                            <point x="0.0234375" y="0.0234375" />
-                            <point x="0.5" y="0.0078125" />
-                            <point x="0.867188" y="0.132813" />
-                            <point x="0.867188" y="0.5" />
-                            <point x="0.679688" y="0.679688" />
-                            <point x="0.320313" y="0.679688" />
-                            <point x="0.0078125" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289589747655445" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="772136693008832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248518819035731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="360122137704937">
+            <plugin id="Mouse" />
         </object-type>
     </object-folder>
     <families>
@@ -1149,6 +1226,7 @@
             <members>
                 <member>BattleFont</member>
                 <member>DamageFont</member>
+                <member>DebugFont</member>
                 <member>DefaultFont</member>
                 <member>SansFont</member>
             </members>
@@ -1248,6 +1326,8 @@
         <event-sheet>AttackLoader.xml</event-sheet>
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>Menus.xml</event-sheet>
+        <event-sheet>BuildInfo.xml</event-sheet>
+        <event-sheet>No-Hit.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="8">
@@ -1278,6 +1358,8 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="LocalStorage" uid="72" />
+        <global-instance type="Mouse" uid="74" />
     </global-instances>
     <sounds-folder>
         <file name="Ding.ogg" />
@@ -1299,10 +1381,11 @@
         <file name="GasterBlast2.ogg" />
         <file name="ChurchBell.ogg" />
         <file name="snd_wrongvictory.ogg" />
-    </sounds-folder>
-    <music-folder>
+        <file name="snd_dumbvictory.ogg" />
+        <file name="mus_options_fall.ogg" />
         <file name="mus_zz_megalovania.ogg" />
-    </music-folder>
+    </sounds-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

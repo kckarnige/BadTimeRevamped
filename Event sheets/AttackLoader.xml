@@ -137,23 +137,44 @@
                             <param id="1" name="URL">AttackLoader.At(FileIndex) &amp; &quot;.csv&quot;</param>
                         </action>
                         <action id="-3" name="Create object" sid="3506252319395745" type="System">
-                            <param id="0" name="Object to create">BattleFont</param>
+                            <param id="0" name="Object to create">DefaultFont</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">8</param>
                             <param id="3" name="Y">8</param>
                         </action>
-                        <action id="-10" name="Set value" sid="7557481260664586" type="BattleFont">
+                        <action id="-10" name="Set value" sid="7557481260664586" type="DefaultFont">
                             <param id="0" name="Instance variable">Name</param>
                             <param id="1" name="Value">&quot;Loading&quot;</param>
                         </action>
-                        <action id="-5" name="Set width" sid="6311234250436831" type="BattleFont">
+                        <action id="-5" name="Set width" sid="6311234250436831" type="DefaultFont">
                             <param id="0" name="Width">640</param>
                         </action>
-                        <action id="-6" name="Set height" sid="6768412320433234" type="BattleFont">
+                        <action id="-6" name="Set height" sid="6768412320433234" type="DefaultFont">
                             <param id="0" name="Height">32</param>
                         </action>
-                        <action id="0" name="Set text" sid="866871016798015" type="BattleFont">
-                            <param id="0" name="Text">&quot;LOADING ATTACKS &quot; &amp; FileIndex &amp; &quot; / &quot; &amp; AttackLoader.Width</param>
+                        <action id="0" name="Set text" sid="866871016798015" type="DefaultFont">
+                            <param id="0" name="Text">&quot;Loading Attacks &quot; &amp; FileIndex &amp; &quot; / &quot; &amp; AttackLoader.Width &amp; &quot;!&quot;</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="684019757773583" type="DefaultFont">
+                            <param id="0" name="Scale">1.6</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="703583937422638" type="DefaultFont">
+                            <param id="0" name="Horizontal alignment">1</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="626260014662727" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="495215061258485" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="642151469621599" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -183,8 +204,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="3276516335364258" type="RPGText">
-                                    <param id="0" name="Text">&quot;LOADING ATTACKS &quot; &amp; FileIndex &amp; &quot; / &quot; &amp; AttackLoader.Width</param>
+                                <action id="0" name="Set text" sid="728100025621692" type="RPGText">
+                                    <param id="0" name="Text">&quot;Attacks Loaded!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
