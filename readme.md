@@ -9,7 +9,7 @@ This mod and the original Bad Time Simulator were made in [Construct 2](https://
 
 Known Issues
 ------------
-- Not using the latest build on Bad Time Simulator (Latest commit as of writing, May 29, 2021: Commit 33)
+- Not using the latest build of Bad Time Simulator
 
 Jcw87's Contact
 -------
