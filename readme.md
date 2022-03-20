@@ -15,10 +15,10 @@ Version Info
 I'm not releasing any builds on the main branch, nor for offline use until they are stable and ready to be released.
 
 In the meantime, this branch will be dedicated to InDev builds, with the letter indicating the stage of development, and the number next to it being the build number.
-- A = Alpha/Unstable
-- B = Beta/Mostly Stable
-- S = Stable, but awaiting a few finishing touches)
-- P = Preview/Mostly Stable, but only features finished content
+- A = Alpha | Unstable, usually in heavy development
+- B = Beta | Mostly Stable
+- S = Stable | Usually a full release
+- P = Preview | Mostly Stable, but only features select content
 
 Example: InDev Build p2 (4.2.0)
 

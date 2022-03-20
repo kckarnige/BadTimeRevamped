@@ -3,9 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>BuildInfo</name>
     <events>
-        <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">Stable</variable>
-        <variable constant="0" name="DesktopBuild" sid="767752196151469" static="0" type="number">0</variable>
-        <variable constant="0" name="ShowBuildInfo" sid="433491871019591" static="0" type="number">0</variable>
+        <variable constant="0" name="buildType" sid="407825804870298" static="0" type="text">b1</variable>
+        <variable constant="0" name="DesktopBuild" sid="767752196151469" static="0" type="number">1</variable>
+        <variable constant="0" name="HideMouse" sid="344011919054341" static="0" type="number">0</variable>
+        <variable constant="0" name="ShowBuildInfo" sid="433491871019591" static="0" type="number">1</variable>
         <event-group description="" sid="463479059386579" title="Show Build Info" />
         <event-block sid="171781272408395">
             <conditions>
@@ -68,9 +69,6 @@
                 <action id="10" name="Request fullscreen" sid="392845350535686" type="Browser">
                     <param id="0" name="Mode">4</param>
                 </action>
-                <action id="0" name="Set cursor style" sid="585314908346884" type="Mouse">
-                    <param id="0" name="Cursor style">7</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="388701991222791">
@@ -88,9 +86,6 @@
             <actions>
                 <action id="11" name="Cancel fullscreen" sid="704736625943501" type="Browser" />
                 <action id="2" name="Focus" sid="680560223477410" type="Browser" />
-                <action id="0" name="Set cursor style" sid="364911343665783" type="Mouse">
-                    <param id="0" name="Cursor style">0</param>
-                </action>
             </actions>
         </event-block>
     </events>

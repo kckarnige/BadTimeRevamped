@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Battle</name>
     <events>
-        <include>No-Hit</include>
         <include>BuildInfo</include>
         <include>InputManagement</include>
         <include>Fonts</include>
@@ -86,10 +85,6 @@
                     <param id="0" name="Animation">&quot;ClosedEyes&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="0" name="Set item" sid="210103156242379" type="LocalStorage">
-                    <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
-                    <param id="1" name="Value">1</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="5660586456921061">
@@ -99,10 +94,37 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;PlayerName&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="651292082434403" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="9190566972510164" type="RPGText">
-                            <param id="0" name="Text">uppercase(Name) &amp; &quot;   LV 19&quot;</param>
+                            <param id="0" name="Text">uppercase(Name) &amp; &quot;  LV &quot; &amp; Level</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="526003179228539" type="RPGText">
+                            <param id="0" name="X">RPGText.X + 30</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="772470357876383">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="937512303488053" type="RPGText">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PlayerName&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="937204714792887" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="269868685503031" type="RPGText">
+                            <param id="0" name="Text">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -147,6 +169,20 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="180221024434912">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="916293104241789" type="System">
+                                    <param id="0" name="Variable">EndlessStage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="822082056911888" type="Audio">
+                                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="9739637546675257">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="2193043457865295" type="System">
@@ -205,6 +241,209 @@
                         </action>
                         <action id="0" name="Set text" sid="8939946990053354" type="DefaultFont">
                             <param id="0" name="Text">&quot;[X] / [Shift] / (B) to Quit&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="742808280031461">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="171108579354662" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="688214363112796" type="UIFight" />
+                        <action id="-9" name="Destroy" sid="770265401755049" type="UIAct" />
+                        <action id="-9" name="Destroy" sid="723465043429616" type="UIItem" />
+                        <action id="-9" name="Destroy" sid="566674326013864" type="UIMercy" />
+                        <action id="-3" name="Create object" sid="479620545646803" type="System">
+                            <param id="0" name="Object to create">UIFightDelta</param>
+                            <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="2" name="X">188</param>
+                            <param id="3" name="Y">438</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="259687488671121" type="System">
+                            <param id="0" name="Object to create">UIActDelta</param>
+                            <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="2" name="X">UIFightDelta.X + 64</param>
+                            <param id="3" name="Y">UIFightDelta.Y</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="440719066888009" type="System">
+                            <param id="0" name="Object to create">UIItemDelta</param>
+                            <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="2" name="X">UIActDelta.X + 64</param>
+                            <param id="3" name="Y">UIActDelta.Y</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="455811909999401" type="System">
+                            <param id="0" name="Object to create">UIMercyDelta</param>
+                            <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="2" name="X">UIItemDelta.X + 64</param>
+                            <param id="3" name="Y">UIItemDelta.Y</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="869213479142525" type="System">
+                            <param id="0" name="Object to create">UIDefendDelta</param>
+                            <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="2" name="X">UIMercyDelta.X + 64</param>
+                            <param id="3" name="Y">UIMercyDelta.Y</param>
+                        </action>
+                        <action id="-17" name="Set layer scale" sid="832858362171510" type="System">
+                            <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="1" name="Scale">1.1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="427611492715127" type="System">
+                            <param id="0" name="Object to create">Line</param>
+                            <param id="1" name="Layer">&quot;Background&quot;</param>
+                            <param id="2" name="X">546</param>
+                            <param id="3" name="Y">430</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="612857553811944" type="HPBarMask">
+                            <param id="0" name="Animation">&quot;Deltarune&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="115370762769562" type="HP">
+                            <param id="0" name="Animation">&quot;Deltarune&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="250850854838513" type="KR">
+                            <param id="0" name="Animation">&quot;Deltarune&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="688205724736240" type="UIBorderStuff">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="432843277225259" type="UIBorderStuff">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="247103134912187" type="UIBorderStuff">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="568602037176275" type="Line">
+                            <param id="0" name="Width">460</param>
+                            <param id="1" name="Height">3</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="247953004689847" type="Line">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="948697786540838" type="Line">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="713703652284238" type="Line">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="924512914016250" type="HPBar">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="962492331444598" type="HPBar">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="614032481670272" type="HPBar">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="725079059223671" type="System">
+                            <param id="0" name="Object to create">DeltaIcon</param>
+                            <param id="1" name="Layer">&quot;HPBar&quot;</param>
+                            <param id="2" name="X">116</param>
+                            <param id="3" name="Y">413</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="591591935694296" type="DeltaIcon">
+                            <param id="0" name="Animation">&quot;Kris&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="207152574985601" type="System">
+                            <param id="0" name="Object to create">DeltaName</param>
+                            <param id="1" name="Layer">&quot;HPBar&quot;</param>
+                            <param id="2" name="X">148</param>
+                            <param id="3" name="Y">406</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="670654323593024" type="HPBarMask">
+                            <param id="0" name="X">HPBarMask.X - 28</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="491177867126525" type="HP">
+                            <param id="0" name="X">HPBarMask.ImagePointX(0) - 84</param>
+                            <param id="1" name="Y">418</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="332791720676136" type="KR">
+                            <param id="0" name="X">HPBarMask.ImagePointX(0) + 84</param>
+                            <param id="1" name="Y">418</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="794047614942499" type="UIBorder">
+                            <param id="0" name="Width">461.823</param>
+                            <param id="1" name="Height">124</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="943193362037399" type="UIBorder">
+                            <param id="0" name="X">85.409</param>
+                            <param id="1" name="Y">UIBorder.Y - 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="336723847071476">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="577929620553444" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="195457422416448" type="HPBar">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="411658727211247" type="HPBar">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="177394072144403" type="HPBar">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-17" name="Set layer scale" sid="612772624111906" type="System">
+                            <param id="0" name="Layer">&quot;Buttons&quot;</param>
+                            <param id="1" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="782979370041463">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="150518499698392" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="523240060369062" type="BattleFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;HP&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="982470794554428" type="BattleFont">
+                            <param id="0" name="X">BattleFont.X - 14</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="868700139559622" type="KRHPFilter">
+                            <param id="0" name="X">KRHPFilter.X - 14</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1151,6 +1390,32 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="482898713724535">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="541319045254813" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="255519494864685" type="CombatZone">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="126919841518552" type="CombatZone">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">75</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="883534493151447" type="CombatZone">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="3280109314632482">
@@ -1457,6 +1722,32 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="431423971298114">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="338528844413661" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="786383369320314" type="CombatZone">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="194048704084259" type="CombatZone">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="576520275853774" type="CombatZone">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="9880305470005524">
@@ -1551,6 +1842,23 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="578643953186304">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="251771321698212" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">69</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="558372719773998" type="Audio">
+                            <param id="0" name="Audio file">snd_dumbvictory</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="278833673762803">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="455887048678932" type="System">
@@ -1560,9 +1868,9 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set item" sid="579310884677776" type="LocalStorage">
-                            <param id="0" name="Key">&quot;NoHitBadge&quot;</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="0" name="Set item" sid="741495591444777" type="LocalStorage">
+                            <param id="0" name="Key">&quot;NoHitCheck&quot;</param>
+                            <param id="1" name="Value">&quot;Yes&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1968,6 +2276,11 @@
                         <condition id="0" name="On function" sid="2008325799079652" type="Function">
                             <param id="0" name="Name">&quot;MenuFightEnemy&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="990754462766612" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="2505710701175432" type="MenuItem" />
@@ -2027,6 +2340,91 @@
                                     <param id="1" name="Value">2</param>
                                 </action>
                                 <action id="2" name="Stop" sid="1710816100879708" type="TargetChoice" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="913154247197781">
+                    <conditions>
+                        <condition id="0" name="On function" sid="693451801828660" type="Function">
+                            <param id="0" name="Name">&quot;MenuFightEnemy&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="427192415397263" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="490938032484917" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="347993444675926" type="DefaultFont" />
+                        <action id="-9" name="Set value" sid="460093963540007" type="System">
+                            <param id="0" name="Variable">MenuState</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="760323774916528" type="PlayerHeart">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="682378437083996" type="System">
+                            <param id="0" name="Object to create">Target</param>
+                            <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                            <param id="2" name="X">320</param>
+                            <param id="3" name="Y">320</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="731035914455332" type="Target">
+                            <param id="0" name="Animation">&quot;KrisDeltarune&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="345477968795006" type="MenuBoneLeft" />
+                    </actions>
+                    <sub-events>
+                        <comment>Lazy again. Just Sans.</comment>
+                        <event-block sid="323883212577952">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="365907188592891" type="System">
+                                    <param id="0" name="First value">floor(random(2))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="335646237115497" type="System">
+                                    <param id="0" name="Object to create">TargetChoice</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">CombatZone.BBoxLeft</param>
+                                    <param id="3" name="Y">320</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="512751890594744" type="TargetChoice">
+                                    <param id="0" name="Animation">&quot;Deltarune&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="646583394396825" type="TargetChoice">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="594266191814445" type="TargetChoice" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="471127666742705">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="929294622847477" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="158151604175374" type="System">
+                                    <param id="0" name="Object to create">TargetChoice</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">CombatZone.BBoxRight</param>
+                                    <param id="3" name="Y">320</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="913971025700276" type="TargetChoice">
+                                    <param id="0" name="Animation">&quot;Deltarune&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="793015849051513" type="TargetChoice">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="2" name="Stop" sid="250582418809685" type="TargetChoice" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -2264,6 +2662,11 @@
                         <condition id="0" name="On function" sid="372784626825399" type="Function">
                             <param id="0" name="Name">&quot;MenuActEnemy&quot;</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="566415032342229" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="3469618219357269" type="MenuItem" />
@@ -2277,6 +2680,34 @@
                             <param id="1" name="Value">3</param>
                         </action>
                         <action id="0" name="Call function" sid="250405060356076" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Check&quot;{###}&quot;MenuCheckSans&quot;{###}255{###}255{###}255</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="518358535962212">
+                    <conditions>
+                        <condition id="0" name="On function" sid="497171415367111" type="Function">
+                            <param id="0" name="Name">&quot;MenuActEnemy&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="297338486578848" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="475889318233374" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="470845142300730" type="DefaultFont" />
+                        <action id="0" name="Call function" sid="722437979262696" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;MenuBattle&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="484967001453513" type="System">
+                            <param id="0" name="Variable">MenuState</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="584803559390200" type="Function">
                             <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Check&quot;{###}&quot;MenuCheckSans&quot;{###}255{###}255{###}255</param>
                         </action>
@@ -2628,6 +3059,38 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="486755439122667">
+                    <conditions>
+                        <condition id="0" name="On function" sid="517504316048718" type="Function">
+                            <param id="0" name="Name">&quot;MenuDefend&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="959014108394759" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="922625922646108" type="DefaultFont" />
+                        <action id="-9" name="Set value" sid="904061399654133" type="System">
+                            <param id="0" name="Variable">MenuState</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="960198037229949" type="PlayerHeart">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="153047346785348" type="Function">
+                            <param id="0" name="Name">&quot;StartAttack&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Add to" sid="861170690455637" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="0" name="Play" sid="811377042275110" type="Audio">
+                            <param id="0" name="Audio file">PlayerHeal</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="9387295331607676">
                     <conditions>
                         <condition id="0" name="On function" sid="2261434248788803" type="Function">
@@ -2774,6 +3237,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">MenuStack.Back</param>
                         </condition>
+                        <condition id="-8" name="Compare two values" sid="157494638740931" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-4" name="Set position to another object" sid="5758182527997727" type="PlayerHeart">
@@ -2792,12 +3260,52 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="319209721554798">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="220377565336206" type="System">
+                            <param id="0" name="Variable">MenuState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="843641140617933" type="UIButtons">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">MenuStack.Back</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="518695005856992" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="917600679761974" type="PlayerHeart">
+                            <param id="0" name="Object">UIButtons</param>
+                            <param id="1" name="Image point (optional)">&quot;Heart&quot;</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="347488060249334" type="PlayerHeart">
+                            <param id="0" name="Layer">&quot;Background&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="848756930581394" type="PlayerHeart">
+                            <param id="0" name="Animation">&quot;None&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="943074409333435" type="PlayerHeart">
+                            <param id="0" name="Scale">1.6</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="8459416245762627">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5061366700001748" type="System">
                             <param id="0" name="Variable">MenuState</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="129436991048035" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2836,6 +3344,61 @@
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="9" name="Set scale" sid="460258532413016" type="PlayerHeart">
+                                    <param id="0" name="Scale">1.6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="397138761075404">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="438895194100525" type="System">
+                            <param id="0" name="Variable">MenuState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="588607873500955" type="System">
+                            <param id="0" name="First value">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Kris&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="701893215177637" type="UIButtons">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="742569371098436" type="PlayerHeart">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="544059693261667" type="PlayerHeart">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="974769809311433">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="461705645290571" type="UIButtons">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">MenuStack.Back</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="634549249404330" type="PlayerHeart">
+                                    <param id="0" name="Object">UIButtons</param>
+                                    <param id="1" name="Image point (optional)">&quot;Heart&quot;</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="216810477385340" type="UIButtons">
+                                    <param id="0" name="Animation">&quot;Highlight&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="775398895394833" type="PlayerHeart">
+                                    <param id="0" name="Animation">&quot;None&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="9" name="Set scale" sid="550363473090786" type="PlayerHeart">
                                     <param id="0" name="Scale">1.6</param>
                                 </action>
                             </actions>
@@ -5547,7 +6110,7 @@
                     <actions>
                         <action id="-3" name="Create object" sid="4850230570626132" type="System">
                             <param id="0" name="Object to create">GasterBlaster</param>
-                            <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                            <param id="1" name="Layer">&quot;Touch&quot;</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
@@ -7912,11 +8475,34 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-10" name="Add to" sid="691803606827817" type="System">
-                            <param id="0" name="Variable">HitCount</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="17" name="Execute Javascript" sid="463627145686254" type="Browser">
+                            <param id="0" name="Javascript">&quot;navigator.getGamepads()[0].vibrationActuator.playEffect(&apos;dual-rumble&apos;, {&#x0D;&#x0A;  startDelay: 0,&#x0D;&#x0A;  duration: 100,&#x0D;&#x0A;  weakMagnitude: 1.0,&#x0D;&#x0A;  strongMagnitude: 1.0,&#x0D;&#x0A;});&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="731491773453306">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="465426687637912" type="System">
+                                    <param id="0" name="First value">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Kris&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="899880093968244" type="DeltaIcon">
+                                    <param id="0" name="Animation">&quot;KrisHurt&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="514701129325704" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="172283497652972" type="DeltaIcon">
+                                    <param id="0" name="Animation">&quot;Kris&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="9017895024442913">
                     <conditions>
@@ -8385,20 +8971,39 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="672724359725996">
+                    <conditions>
+                        <condition id="0" name="On function" sid="897990133994787" type="Function">
+                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="513860490018274" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="3326750211042875">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="7338451756091677" type="System">
+                        <condition id="-14" name="Compare variable" sid="117508953188741" type="System">
                             <param id="0" name="Variable">HP</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="6476514813146421" type="PlayerHeart">
+                        <condition id="-7" name="Compare instance variable" sid="817362356320110" type="PlayerHeart">
                             <param id="0" name="Instance variable">Mode</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="863725396577021" type="PlayerHeart">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="538766751818188" type="PlayerHeart">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                         <action id="-10" name="Set value" sid="3459561075160849" type="PlayerHeart">
                             <param id="0" name="Instance variable">Mode</param>
                             <param id="1" name="Value">-1</param>
@@ -8440,9 +9045,9 @@
                         <action id="-9" name="Destroy" sid="2110238212603641" type="AttackTiled" />
                         <action id="-9" name="Destroy" sid="646720577179653" type="Attack9Patch" />
                         <action id="-16" name="Wait" sid="4941265421462373" type="System">
-                            <param id="0" name="Seconds">20/30</param>
+                            <param id="0" name="Seconds">0.5</param>
                         </action>
-                        <action id="4" name="Set animation" sid="2329274279480105" type="PlayerHeart">
+                        <action id="4" name="Set animation" sid="183905982624092" type="PlayerHeart">
                             <param id="0" name="Animation">&quot;Split&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -8452,8 +9057,11 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="17" name="Execute Javascript" sid="625882798760827" type="Browser">
+                            <param id="0" name="Javascript">&quot;navigator.getGamepads()[0].vibrationActuator.playEffect(&apos;dual-rumble&apos;, {&#x0D;&#x0A;  startDelay: 0,&#x0D;&#x0A;  duration: 200,&#x0D;&#x0A;  weakMagnitude: 1.0,&#x0D;&#x0A;  strongMagnitude: 1.0,&#x0D;&#x0A;});&quot;</param>
+                        </action>
                         <action id="-16" name="Wait" sid="796514820377959" type="System">
-                            <param id="0" name="Seconds">40/30</param>
+                            <param id="0" name="Seconds">1.5</param>
                         </action>
                         <action id="-15" name="Set visible" sid="6017268762912521" type="PlayerHeart">
                             <param id="0" name="Visibility">0</param>
@@ -8513,6 +9121,10 @@
                             <param id="0" name="Acceleration">300</param>
                             <param id="1" name="Angle">90</param>
                         </action>
+                        <action id="-4" name="Set position to another object" sid="4172743817139278" type="HPBar">
+                            <param id="0" name="Object">HPBackground</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -8524,9 +9136,9 @@
                         <condition id="-2" name="On start of layout" sid="9144483854578006" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-4" name="Set position to another object" sid="4172743817139278" type="HPBar">
-                            <param id="0" name="Object">HPBackground</param>
-                            <param id="1" name="Image point (optional)">0</param>
+                        <action id="-3" name="Set position" sid="799043154570676" type="HPBackground">
+                            <param id="0" name="X">HPBarMask.ImagePointX(1)</param>
+                            <param id="1" name="Y">HPBarMask.ImagePointY(1)</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="87943119435334" type="KRBar">
                             <param id="0" name="Object">HPBackground</param>
@@ -8546,6 +9158,9 @@
                     </conditions>
                     <actions>
                         <action id="-5" name="Set width" sid="5702588972840914" type="HPBackground">
+                            <param id="0" name="Width">floor(MaxHP * 1.2)</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="753793183762171" type="HPBarMask">
                             <param id="0" name="Width">floor(MaxHP * 1.2)</param>
                         </action>
                         <action id="-5" name="Set width" sid="1737747704672853" type="HPBar">
@@ -8582,10 +9197,13 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-28" name="Set effect parameter" sid="9456539620268645" type="BattleFont">
+                                <action id="-28" name="Set effect parameter" sid="639231594087695" type="KR">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
                                     <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="432219288500699" type="KRHPFilter">
+                                    <param id="0" name="Opacity">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -8598,10 +9216,13 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-28" name="Set effect parameter" sid="9571160412477923" type="BattleFont">
+                                <action id="-28" name="Set effect parameter" sid="311989293405323" type="KR">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">14</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="778717644974117" type="KRHPFilter">
+                                    <param id="0" name="Opacity">100</param>
                                 </action>
                             </actions>
                         </event-block>
