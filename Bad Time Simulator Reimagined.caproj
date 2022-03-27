@@ -2,7 +2,7 @@
 <c2project>
     <name>Bad Time Simulator Reimagined</name>
     <description>you really are a freak, huh?</description>
-    <version>3.5.0</version>
+    <version>4.0.0</version>
     <author>KayoticCarnige</author>
     <author-email></author-email>
     <author-website>https://kckarnige.is-a.dev/BadTimeRevamped</author-website>
@@ -36,6 +36,7 @@
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="darken">Darken</effect>
+        <effect author="Scirra" id="hsladjust">Adjust HSL</effect>
         <effect author="Scirra" id="tint">Tint</effect>
     </used-effects>
     <configurations>
@@ -673,7 +674,7 @@
                         </frame>
                     </animation>
                     <animation framecount="5" loop="0" name="HandLeft" pingpong="0" repeatcount="1" repeatto="0" sid="1931647922176485" speed="15">
-                        <frame duration="1" hotspotX="0" hotspotY="0.354167">
+                        <frame duration="1" hotspotX="0.34375" hotspotY="1">
                             <image-point name="Head" x="0.354167" y="0.125" />
                             <collision-poly>
                                 <point x="1" y="0" />
@@ -743,30 +744,30 @@
                     <animation framecount="1" loop="0" name="Sweat1" pingpong="0" repeatcount="1" repeatto="0" sid="7107173151154428" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
+                                <point x="1" y="0.75" />
+                                <point x="0" y="0.75" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Sweat2" pingpong="0" repeatcount="1" repeatto="0" sid="2389381723178476" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
+                                <point x="1" y="0.75" />
+                                <point x="0" y="0.75" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Sweat3" pingpong="0" repeatcount="1" repeatto="0" sid="2164871598142847" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
+                                <point x="1" y="0.75" />
+                                <point x="0" y="0.75" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1078,32 +1079,6 @@
                 <plugin id="Dictionary" />
             </object-type>
         </object-folder>
-        <object-folder name="Fonts">
-            <object-type name="BattleFont" sid="6163397057824361">
-                <plugin id="Spritefont2" />
-                <texture original-source="C:\Users\ivette\Desktop\BadTimeRemix-gh-pages\images\battlefont.png" />
-            </object-type>
-            <object-type name="SansFont" sid="5575857119740264">
-                <plugin id="Spritefont2" />
-                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleSansFont.png" />
-            </object-type>
-            <object-type name="DefaultFont" sid="1422059525027614">
-                <plugin id="Spritefont2" />
-                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
-            </object-type>
-            <object-type name="DamageFont" sid="501546311307215">
-                <plugin id="Spritefont2" />
-                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDamageFont.png" />
-            </object-type>
-            <object-type name="DebugFont" sid="243205438385687">
-                <plugin id="Spritefont2" />
-                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
-            </object-type>
-            <object-type name="PlayerNameFont" sid="445874948170456">
-                <plugin id="Spritefont2" />
-                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
-            </object-type>
-        </object-folder>
         <object-folder name="TouchUI">
             <object-type name="TouchA" sid="117524411669736">
                 <plugin id="Sprite" />
@@ -1203,6 +1178,32 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Fonts">
+            <object-type name="BattleFont" sid="6163397057824361">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\ivette\Desktop\BadTimeRemix-gh-pages\images\battlefont.png" />
+            </object-type>
+            <object-type name="SansFont" sid="5575857119740264">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleSansFont.png" />
+            </object-type>
+            <object-type name="DefaultFont" sid="1422059525027614">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
+            </object-type>
+            <object-type name="DamageFont" sid="501546311307215">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDamageFont.png" />
+            </object-type>
+            <object-type name="DebugFont" sid="243205438385687">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
+            </object-type>
+            <object-type name="PlayerNameFont" sid="445874948170456">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDefaultFont.png" />
+            </object-type>
+        </object-folder>
         <object-type name="PlayerHeart" sid="5960708907117077">
             <plugin id="Sprite" />
             <instance-variables>
@@ -1222,16 +1223,6 @@
             </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3948179004351251" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Split" pingpong="0" repeatcount="1" repeatto="0" sid="920179115355589" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0" y="1" />
@@ -1359,11 +1350,26 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="NoHitHeartBadge" sid="876017697421695">
+        <object-type name="Potassium" sid="876017697421695">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="RainbowColor" sid="768569346919009" type="number" />
+            </instance-variables>
+            <effects>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
+                </effect-type>
+            </effects>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690995496587519" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690995496587519" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Robert\Downloads\162241.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1372,6 +1378,14 @@
         </object-type>
         <object-type name="MenuImage" sid="907468671155629">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="RainbowColor" sid="433249738344788" type="number" />
+            </instance-variables>
+            <effects>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809140242372622" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.614583" />
@@ -1426,6 +1440,35 @@
             <plugin id="NinePatch" />
             <texture />
         </object-type>
+        <object-type name="PlayerHeartSplit" sid="424701819801680">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Mode" sid="402799005193998" type="number" />
+                <instance-variable name="Slammed" sid="852518156077962" type="boolean" />
+                <instance-variable name="SlamDamage" sid="232556802223094" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="129955330994142">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="1" sid="958930700944028" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Shake" pingpong="0" repeatcount="1" repeatto="0" sid="235358067206187" speed="16">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">
@@ -1470,10 +1513,14 @@
                 <instance-variable name="CurrentChar" sid="8429195992300595" type="number" />
                 <instance-variable name="T" sid="9067313364631326" type="number" />
                 <instance-variable name="Timeout" sid="4487571781562274" type="number" />
+                <instance-variable name="RainbowColor" sid="823372509146148" type="number" />
             </instance-variables>
             <effects>
                 <effect-type name="Tint">
                     <effect id="tint" />
+                </effect-type>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
                 </effect-type>
             </effects>
         </family>
@@ -1575,6 +1622,7 @@
         <event-sheet>Menus.xml</event-sheet>
         <event-sheet>BuildInfo.xml</event-sheet>
         <event-sheet>PlayerNameQuote.xml</event-sheet>
+        <event-sheet>RainbowText.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Gamepad" uid="8">
@@ -1631,6 +1679,8 @@
         <file name="snd_dumbvictory.ogg" />
         <file name="mus_options_fall.ogg" />
         <file name="mus_zz_megalovania.ogg" />
+        <file name="mus_dogshrine_2.ogg" />
+        <file name="mus_muscle.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
@@ -1669,5 +1719,6 @@
         <file name="stylesheet.css" />
         <file name="dtm-mono.woff" />
         <file name="dtm-mono.woff2" />
+        <file name="sans_introbasic.csv" />
     </files-folder>
 </c2project>

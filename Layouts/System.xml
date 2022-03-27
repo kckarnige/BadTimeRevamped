@@ -604,6 +604,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -611,6 +612,13 @@
                                 <blue>1</blue>
                                 <green>1</green>
                                 <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -675,6 +683,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -682,6 +691,13 @@
                                 <blue>1</blue>
                                 <green>1</green>
                                 <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -857,6 +873,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -864,6 +881,13 @@
                                 <blue>1</blue>
                                 <green>1</green>
                                 <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -1000,24 +1024,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NoHitHeartBadge" uid="67">
+                <instance type="Potassium" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <RainbowColor>0</RainbowColor>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>54.999450684</x>
                         <y>18.199874878</y>
                         <z>0</z>
-                        <width>16</width>
-                        <height>16</height>
+                        <width>26</width>
+                        <height>27</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.518518507</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1046,6 +1082,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -1053,6 +1090,13 @@
                                 <blue>1</blue>
                                 <green>1</green>
                                 <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -1078,6 +1122,18 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <RainbowColor>0</RainbowColor>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1139,6 +1195,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -1146,6 +1203,13 @@
                                 <blue>1</blue>
                                 <green>1</green>
                                 <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -1397,6 +1461,51 @@
                         <depth>0</depth>
                         <hotspotX>1</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PlayerHeartSplit" uid="85">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Mode>0</Mode>
+                        <Slammed>false</Slammed>
+                        <SlamDamage>false</SlamDamage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="CustomMovement">
+                            <properties>
+                                <stepping-mode>None</stepping-mode>
+                                <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>115</x>
+                        <y>22</y>
+                        <z>0</z>
+                        <width>24</width>
+                        <height>18</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

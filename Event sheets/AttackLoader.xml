@@ -6,6 +6,82 @@
         <event-group description="" sid="5235824354903566" title="AttackLoader">
             <sub-events>
                 <variable constant="0" name="FileIndex" sid="8842408703534389" static="1" type="number">0</variable>
+                <event-block sid="308928859626388">
+                    <conditions>
+                        <condition id="0" name="On function" sid="262817931944367" type="Function">
+                            <param id="0" name="Name">&quot;AttackLoadFinished&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="845762043221782" type="System">
+                            <param id="0" name="First value">DesktopBuild</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="952849823738308" type="System">
+                            <param id="0" name="First value">FileIndex</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">AttackLoader.Width</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="220216403281901" type="System">
+                            <param id="0" name="Object to create">DefaultFont</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">8</param>
+                            <param id="3" name="Y">460</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="200677541067098" type="DefaultFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Value">&quot;AttacksLoaded&quot;</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="237494028552967" type="DefaultFont">
+                            <param id="0" name="Width">640</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="151105559091678" type="DefaultFont">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="0" name="Set text" sid="680644093024219" type="DefaultFont">
+                            <param id="0" name="Text">&quot;Attacks Loaded!&quot;</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="342506097310884" type="DefaultFont">
+                            <param id="0" name="Scale">1.6</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="125933954150579" type="DefaultFont">
+                            <param id="0" name="Horizontal alignment">1</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="765996836704664" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="206453317856864" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="687520396262369" type="DefaultFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="451179663941108" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="981345734171325">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="269506379439922" type="RPGText">
+                                    <param id="0" name="Instance variable">Name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;AttacksLoaded&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="579777428900766" type="RPGText" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="3323177073111975">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="392980208717934" type="System" />
@@ -65,6 +141,11 @@
                         <action id="5" name="Push" sid="4534521751290753" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_intro&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
+                        <action id="5" name="Push" sid="985823830995626" type="AttackLoader">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Value">&quot;sans_introbasic&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
                         <action id="5" name="Push" sid="3391111219319787" type="AttackLoader">
@@ -191,7 +272,7 @@
                                     <param id="0" name="Text">&quot;Loading Attacks &quot; &amp; FileIndex &amp; &quot; / &quot; &amp; AttackLoader.Width &amp; &quot;!&quot;</param>
                                 </action>
                                 <action id="-2" name="Set Y" sid="182574358809987" type="DefaultFont">
-                                    <param id="0" name="Y">380</param>
+                                    <param id="0" name="Y">460</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -214,22 +295,22 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="560021537350723">
+                        <event-block sid="835154906458523">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="9550501475992979" type="RPGText">
+                                <condition id="-7" name="Compare instance variable" sid="366201240387352" type="RPGText">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Loading&quot;</param>
                                 </condition>
-                                <condition id="-8" name="Compare two values" sid="921286565825083" type="System">
+                                <condition id="-8" name="Compare two values" sid="452454960293119" type="System">
                                     <param id="0" name="First value">DesktopBuild</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="728100025621692" type="RPGText">
-                                    <param id="0" name="Text">&quot;Attacks Loaded!&quot;</param>
+                                <action id="0" name="Set text" sid="906208520242853" type="RPGText">
+                                    <param id="0" name="Text">&quot;Loading Attacks &quot; &amp; FileIndex &amp; &quot; / &quot; &amp; AttackLoader.Width &amp; &quot;!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

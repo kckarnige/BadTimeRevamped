@@ -11,16 +11,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">BattleScreen</layout>
-        <layout order="2">MainMenu</layout>
-        <layout order="3">System</layout>
+        <layout order="3">MainMenu</layout>
+        <layout order="12">System</layout>
         <event-sheet order="1">Battle</event-sheet>
-        <event-sheet order="4">InputManagement</event-sheet>
-        <event-sheet order="5">Globals</event-sheet>
-        <event-sheet order="6">MainMenu</event-sheet>
-        <event-sheet order="7">AttackLoader</event-sheet>
-        <event-sheet active="1" order="8">BuildInfo</event-sheet>
-        <event-sheet order="9">Menus</event-sheet>
-        <event-sheet order="10">Fonts</event-sheet>
+        <event-sheet active="1" order="2">InputManagement</event-sheet>
+        <event-sheet order="4">Globals</event-sheet>
+        <event-sheet order="5">MainMenu</event-sheet>
+        <event-sheet order="6">BuildInfo</event-sheet>
+        <event-sheet order="7">Menus</event-sheet>
+        <event-sheet order="8">Fonts</event-sheet>
+        <event-sheet order="9">RPGText</event-sheet>
+        <event-sheet order="10">RainbowText</event-sheet>
+        <event-sheet order="11">Timeline</event-sheet>
+        <event-sheet order="13">PlayerNameQuote</event-sheet>
+        <event-sheet order="14">AttackLoader</event-sheet>
+        <event-sheet order="15">Items</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,7 +36,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1">
         <family expanded="0" name="BoneStab" />
         <family expanded="0" name="Bone" />
-        <family expanded="0" name="RPGText" />
+        <family expanded="1" name="RPGText" />
         <family expanded="0" name="UIButtons" />
         <family expanded="0" name="Attack9Patch" />
         <family expanded="0" name="AttackSprite" />
@@ -46,8 +51,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Enemies/" />
         <folder expanded="1" path="object-folder/Attacks/" />
         <folder expanded="1" path="object-folder/Timeline/" />
-        <folder expanded="1" path="object-folder/Fonts/" />
         <folder expanded="1" path="object-folder/TouchUI/" />
+        <folder expanded="1" path="object-folder/Fonts/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -90,8 +95,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MenuItem/" />
         <folder expanded="1" path="animation-folder/HeartShard/" />
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
-        <folder expanded="1" path="animation-folder/NoHitHeartBadge/" />
+        <folder expanded="1" path="animation-folder/Potassium/" />
         <folder expanded="1" path="animation-folder/MenuImage/" />
         <folder expanded="1" path="animation-folder/MenuImageFrame/" />
+        <folder expanded="1" path="animation-folder/PlayerHeartSplit/" />
     </folders-expanded>
 </c2uistate>

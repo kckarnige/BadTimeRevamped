@@ -330,9 +330,6 @@
                                     <param id="0" name="Type">0</param>
                                     <param id="1" name="Message">&quot;MenuBack on tick &quot; &amp; tickcount</param>
                                 </action>
-                                <action id="17" name="Execute Javascript" sid="771721864322576" type="Browser">
-                                    <param id="0" name="Javascript">&quot;navigator.getGamepads()[0].vibrationActuator.playEffect(&apos;dual-rumble&apos;, {&#x0D;&#x0A;  startDelay: 0,&#x0D;&#x0A;  duration: 100,&#x0D;&#x0A;  weakMagnitude: 1.0,&#x0D;&#x0A;  strongMagnitude: 1.0,&#x0D;&#x0A;});&quot;</param>
-                                </action>
                             </actions>
                             <sub-events>
                                 <variable constant="0" name="FuncName" sid="7156101104530386" static="0" type="text"></variable>
