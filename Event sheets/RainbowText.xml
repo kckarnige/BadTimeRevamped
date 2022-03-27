@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>RainbowText</name>
+    <events>
+        <event-block sid="653605922881057">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="728386652551354" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="476988758062336" type="RPGText">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Menu4&quot;</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="771714950080550" type="RPGText" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="996352985193120" type="RPGText">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Value">1.5</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="331224699305512" type="RPGText">
+                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">self.RainbowColor</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="601684444057051">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="647587516145471" type="RPGText">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Menu4&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="195690496605315" type="RPGText">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="109824478353718" type="RPGText">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="661652502712771">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="750963282649870" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="659232532414999" type="MenuImage">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Value">1.5</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="600240910026975" type="MenuImage">
+                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">self.RainbowColor</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="582733409901132">
+            <conditions>
+                <condition id="2" name="Is playing" sid="101571297908199" type="MenuImage">
+                    <param id="0" name="Animation">&quot;MenuDownload&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="685765221828262" type="MenuImage">
+                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">self.RainbowColor</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="603534718479888">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="574609227444247" type="MenuImage">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="691995515888163" type="MenuImage">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="848337351930914">
+            <conditions>
+                <condition id="2" inverted="1" name="Is playing" sid="617326850647011" type="MenuImage">
+                    <param id="0" name="Animation">&quot;MenuDownload&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="382856697519299" type="MenuImage">
+                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

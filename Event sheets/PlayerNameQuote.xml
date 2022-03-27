@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PlayerNameQuote</name>
+    <events>
+        <variable constant="0" name="DefaultQuote" sid="476889381159488" static="0" type="text">...</variable>
+        <variable constant="0" name="CharaQuote" sid="728290781082050" static="0" type="text">The true name.</variable>
+        <variable constant="0" name="FriskQuote" sid="766263635354588" static="0" type="text">WARNING: This doesn&apos;t alter the game in the slightest, carry on.</variable>
+        <variable constant="0" name="KCKQuote" sid="149696519838371" static="0" type="text">Gay Potassium.</variable>
+        <variable constant="0" name="UtamQuote" sid="924232295092086" static="0" type="text">fnf mod when?</variable>
+        <variable constant="0" name="CreativeQuote" sid="464918672292631" static="0" type="text">Wow, how creative.</variable>
+        <variable constant="0" name="PainQuote" sid="774388447278713" static="0" type="text">Are you okay?</variable>
+        <variable constant="0" name="HomoQuote" sid="262625866723610" static="0" type="text">Kinda gay ngl</variable>
+        <variable constant="0" name="MergQuote" sid="971310299630343" static="0" type="text">Wouldn&apos;t it be funny if he actually played this?</variable>
+        <variable constant="0" name="LinxQuote" sid="944565662081253" static="0" type="text">Wouldn&apos;t it be funny if he actually played this?</variable>
+        <variable constant="0" name="MurderQuote" sid="170004968512703" static="0" type="text">That&apos;s a little on the nose, don&apos;t you think?</variable>
+        <variable constant="0" name="KrisQuote" sid="411604703599653" static="0" type="text">Proceed.</variable>
+        <variable constant="0" name="MercyQuote" sid="775617271643442" static="0" type="text">Too late for that.</variable>
+    </events>
+</c2eventsheet>

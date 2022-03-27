@@ -107,6 +107,38 @@
                 </action>
             </actions>
         </event-block>
+        <event-block any="1" sid="588084403690388">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="402522850543128" type="System" />
+                <condition id="-18" name="On created" sid="323110643457846" type="PlayerNameFont" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set character width" sid="395633899857835" type="PlayerNameFont">
+                    <param id="0" name="Character">&quot;#%&amp;MWmw~&quot;</param>
+                    <param id="1" name="Width">9</param>
+                </action>
+                <action id="5" name="Set character width" sid="612223284784361" type="PlayerNameFont">
+                    <param id="0" name="Character">&quot; $*+-/0123456789=?@ABCDEFGHIJKLNOPQRSTUVXYZ\^abcdefghijklnopqrstuvxyz&quot;</param>
+                    <param id="1" name="Width">8</param>
+                </action>
+                <action id="5" name="Set character width" sid="975975690700834" type="PlayerNameFont">
+                    <param id="0" name="Character">&quot;&quot;&quot;&lt;&gt;{}&quot;</param>
+                    <param id="1" name="Width">7</param>
+                </action>
+                <action id="5" name="Set character width" sid="667206638326132" type="PlayerNameFont">
+                    <param id="0" name="Character">&quot;!()[]_&quot;</param>
+                    <param id="1" name="Width">6</param>
+                </action>
+                <action id="5" name="Set character width" sid="217573931162792" type="PlayerNameFont">
+                    <param id="0" name="Character">&quot;.`&quot;</param>
+                    <param id="1" name="Width">5</param>
+                </action>
+                <action id="5" name="Set character width" sid="254110971759512" type="PlayerNameFont">
+                    <param id="0" name="Character">&quot;&apos;,:;|&quot;</param>
+                    <param id="1" name="Width">4</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block any="1" sid="8349268623442844">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1716146488598677" type="System" />

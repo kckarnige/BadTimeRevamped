@@ -120,758 +120,343 @@
                     <sub-events>
                         <variable constant="1" name="DEADZONE" sid="347815105392105" static="0" type="number">25</variable>
                         <variable constant="0" name="ID" sid="2136621245663251" static="1" type="number">0</variable>
-                        <event-block any="1" sid="4176538350632391">
+                        <event-block sid="319255033313635">
                             <conditions>
-                                <condition id="5" name="Compare axis" sid="9741879000525306" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Axis">1</param>
-                                    <param id="2" name="Comparison">2</param>
-                                    <param id="3" name="Value">-DEADZONE</param>
+                                <condition id="-14" name="Compare variable" sid="495948622119379" type="System">
+                                    <param id="0" name="Variable">ChangingName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
-                                <condition id="3" name="Is button down" sid="4368358773508708" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">12</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="3823286924588628" type="VPad">
-                                    <param id="0" name="Instance variable">Up</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="4512975135500185">
-                            <conditions>
-                                <condition id="5" name="Compare axis" sid="88363034135683" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Axis">1</param>
-                                    <param id="2" name="Comparison">4</param>
-                                    <param id="3" name="Value">DEADZONE</param>
-                                </condition>
-                                <condition id="3" name="Is button down" sid="2124029133398757" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">13</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="5782082524190614" type="VPad">
-                                    <param id="0" name="Instance variable">Down</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="1926108309430191">
-                            <conditions>
-                                <condition id="5" name="Compare axis" sid="8926947896828816" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Axis">0</param>
-                                    <param id="2" name="Comparison">2</param>
-                                    <param id="3" name="Value">-DEADZONE</param>
-                                </condition>
-                                <condition id="3" name="Is button down" sid="8456102855754586" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">14</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="5991560591094707" type="VPad">
-                                    <param id="0" name="Instance variable">Left</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="344060131127289">
-                            <conditions>
-                                <condition id="5" name="Compare axis" sid="8233388208284703" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Axis">0</param>
-                                    <param id="2" name="Comparison">4</param>
-                                    <param id="3" name="Value">DEADZONE</param>
-                                </condition>
-                                <condition id="3" name="Is button down" sid="5630637615353887" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">15</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="2707172931762973" type="VPad">
-                                    <param id="0" name="Instance variable">Right</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="7561975166971555">
-                            <conditions>
-                                <condition id="3" name="Is button down" sid="4140440688929401" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="4460183267387267" type="VPad">
-                                    <param id="0" name="Instance variable">Confirm</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="3430992126100434">
-                            <conditions>
-                                <condition id="3" name="Is button down" sid="8796805238976963" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="3124488412088355" type="VPad">
-                                    <param id="0" name="Instance variable">Cancel</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="4634220243252997">
-                            <conditions>
-                                <condition id="3" name="Is button down" sid="5442644202940229" type="Gamepad">
-                                    <param id="0" name="Gamepad">ID</param>
-                                    <param id="1" name="Button">9</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="3912917353377025" type="VPad">
-                                    <param id="0" name="Instance variable">Menu</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" sid="4884121587429975" title="Keyboard">
-                    <sub-events>
-                        <event-block any="1" sid="1936143924239781">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="3552193861153495" type="Keyboard">
-                                    <param id="0" name="Key">38</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="4868003248484891" type="Keyboard">
-                                    <param id="0" name="Key">87</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="5408598788897175" type="VPad">
-                                    <param id="0" name="Instance variable">Up</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="5325358493886754">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="594305958852773" type="Keyboard">
-                                    <param id="0" name="Key">40</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="1628045043863816" type="Keyboard">
-                                    <param id="0" name="Key">83</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="2778876906348653" type="VPad">
-                                    <param id="0" name="Instance variable">Down</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="7872809225198566">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="1299449188102976" type="Keyboard">
-                                    <param id="0" name="Key">37</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="6476670649189529" type="Keyboard">
-                                    <param id="0" name="Key">65</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="6936900522333045" type="VPad">
-                                    <param id="0" name="Instance variable">Left</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="2614740999858778">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="7423979685350929" type="Keyboard">
-                                    <param id="0" name="Key">39</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="6992990226848274" type="Keyboard">
-                                    <param id="0" name="Key">68</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="2987165759825812" type="VPad">
-                                    <param id="0" name="Instance variable">Right</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="1497366882496331">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="1186023697088874" type="Keyboard">
-                                    <param id="0" name="Key">90</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="5599487570691262" type="Keyboard">
-                                    <param id="0" name="Key">13</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="6612361141996722" type="VPad">
-                                    <param id="0" name="Instance variable">Confirm</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="4623232669904996">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="5021788616537434" type="Keyboard">
-                                    <param id="0" name="Key">88</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="1588947091940208" type="Keyboard">
-                                    <param id="0" name="Key">16</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="4252777994439934" type="VPad">
-                                    <param id="0" name="Instance variable">Cancel</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="1556078509265339">
-                            <conditions>
-                                <condition id="2" name="Key is down" sid="1509728579883262" type="Keyboard">
-                                    <param id="0" name="Key">67</param>
-                                </condition>
-                                <condition id="2" name="Key is down" sid="596894329683083" type="Keyboard">
-                                    <param id="0" name="Key">17</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="4792830248470232" type="VPad">
-                                    <param id="0" name="Instance variable">Menu</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" sid="726194741738483" title="Touch">
-                    <sub-events>
-                        <event-block sid="795051598369363">
-                            <conditions>
-                                <condition id="-20" name="Is on mobile device" sid="804541384717717" type="System" />
                             </conditions>
                             <actions />
                             <sub-events>
-                                <variable constant="0" name="MobileWarned" sid="567741314908991" static="1" type="number">0</variable>
-                                <event-block sid="236920128668373">
+                                <event-block any="1" sid="4176538350632391">
                                     <conditions>
-                                        <condition id="-2" name="On start of layout" sid="380082553913865" type="System" />
+                                        <condition id="5" name="Compare axis" sid="9741879000525306" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Axis">1</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">-DEADZONE</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="4368358773508708" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">12</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Create object" sid="370913479255376" type="System">
-                                            <param id="0" name="Object to create">TouchA</param>
-                                            <param id="1" name="Layer">&quot;Touch&quot;</param>
-                                            <param id="2" name="X">592</param>
-                                            <param id="3" name="Y">48</param>
-                                        </action>
-                                        <action id="-3" name="Create object" sid="530825832723344" type="System">
-                                            <param id="0" name="Object to create">TouchB</param>
-                                            <param id="1" name="Layer">&quot;Touch&quot;</param>
-                                            <param id="2" name="X">480</param>
-                                            <param id="3" name="Y">48</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="667540765836737">
-                                            <conditions>
-                                                <condition id="-14" name="Compare variable" sid="505437346533428" type="System">
-                                                    <param id="0" name="Variable">MobileWarned</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-3" name="Create object" sid="375818885423135" type="System">
-                                                    <param id="0" name="Object to create">DefaultFont</param>
-                                                    <param id="1" name="Layer">&quot;Touch&quot;</param>
-                                                    <param id="2" name="X">16</param>
-                                                    <param id="3" name="Y">400</param>
-                                                </action>
-                                                <action id="-10" name="Set value" sid="222893444387848" type="DefaultFont">
-                                                    <param id="0" name="Instance variable">Name</param>
-                                                    <param id="1" name="Value">&quot;MobileWarn&quot;</param>
-                                                </action>
-                                                <action id="-10" name="Set value" sid="312368363882614" type="DefaultFont">
-                                                    <param id="0" name="Instance variable">Timeout</param>
-                                                    <param id="1" name="Value">3</param>
-                                                </action>
-                                                <action id="-7" name="Set size" sid="327090629639428" type="DefaultFont">
-                                                    <param id="0" name="Width">512</param>
-                                                    <param id="1" name="Height">80</param>
-                                                </action>
-                                                <action id="2" name="Set scale" sid="946531600717532" type="DefaultFont">
-                                                    <param id="0" name="Scale">2</param>
-                                                </action>
-                                                <action id="0" name="Set text" sid="989636852540768" type="DefaultFont">
-                                                    <param id="0" name="Text">&quot;Don&apos;t play on mobile!&quot; &amp; newline &amp; &quot;If want to, use a gamepad!&quot;</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="713870393895474" type="System">
-                                                    <param id="0" name="Variable">MobileWarned</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="280603110395217">
-                                    <conditions>
-                                        <condition id="0" name="On any touch start" sid="453502036546672" type="Touch" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="10" name="Request fullscreen" sid="904088374612251" type="Browser">
-                                            <param id="0" name="Mode">0</param>
+                                        <action id="-10" name="Set value" sid="3823286924588628" type="VPad">
+                                            <param id="0" name="Instance variable">Up</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="745134333750571">
+                                <event-block any="1" sid="4512975135500185">
                                     <conditions>
-                                        <condition id="0" name="On any touch start" sid="862379527794763" type="Touch" />
-                                        <condition id="-8" name="Compare two values" sid="651137451437577" type="System">
-                                            <param id="0" name="First value">TouchDPad.Count</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">0</param>
+                                        <condition id="5" name="Compare axis" sid="88363034135683" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Axis">1</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">DEADZONE</param>
                                         </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <variable constant="0" name="CanvasX" sid="200913029347146" static="0" type="number">0</variable>
-                                        <variable constant="0" name="CanvasY" sid="278201514538128" static="0" type="number">0</variable>
-                                        <variable constant="0" name="X" sid="556897614785245" static="0" type="number">0</variable>
-                                        <variable constant="0" name="Y" sid="478425805027930" static="0" type="number">0</variable>
-                                        <variable constant="0" name="StartDPad" sid="959706783019112" static="0" type="number">1</variable>
-                                        <event-block sid="937309899299078">
-                                            <conditions>
-                                                <condition id="-1" name="Every tick" sid="839198326880009" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="469766991599153" type="System">
-                                                    <param id="0" name="Variable">CanvasX</param>
-                                                    <param id="1" name="Value">Touch.AbsoluteXForID(Touch.TouchID)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="663637905290338" type="System">
-                                                    <param id="0" name="Variable">CanvasY</param>
-                                                    <param id="1" name="Value">Touch.AbsoluteYForID(Touch.TouchID)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="268494791391574" type="System">
-                                                    <param id="0" name="Variable">X</param>
-                                                    <param id="1" name="Value">CanvasToLayerX(&quot;Touch&quot;, CanvasX, CanvasY)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="579266858650583" type="System">
-                                                    <param id="0" name="Variable">Y</param>
-                                                    <param id="1" name="Value">CanvasToLayerY(&quot;Touch&quot;, CanvasX, CanvasY)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="893842085849600" type="System">
-                                                    <param id="0" name="Variable">StartDPad</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="856032958932707">
-                                            <conditions>
-                                                <condition id="-36" name="Pick overlapping point" sid="372409729378271" type="System">
-                                                    <param id="0" name="Object">TouchA</param>
-                                                    <param id="1" name="X">X</param>
-                                                    <param id="2" name="Y">Y</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="903377270620000" type="System">
-                                                    <param id="0" name="Variable">StartDPad</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="231552480403004">
-                                            <conditions>
-                                                <condition id="-36" name="Pick overlapping point" sid="955997019374758" type="System">
-                                                    <param id="0" name="Object">TouchB</param>
-                                                    <param id="1" name="X">X</param>
-                                                    <param id="2" name="Y">Y</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="643312090155452" type="System">
-                                                    <param id="0" name="Variable">StartDPad</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="786327277455568">
-                                            <conditions>
-                                                <condition id="-14" name="Compare variable" sid="444245094889309" type="System">
-                                                    <param id="0" name="Variable">StartDPad</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-3" name="Create object" sid="555072147695984" type="System">
-                                                    <param id="0" name="Object to create">TouchDPad</param>
-                                                    <param id="1" name="Layer">&quot;Touch&quot;</param>
-                                                    <param id="2" name="X">X</param>
-                                                    <param id="3" name="Y">Y</param>
-                                                </action>
-                                                <action id="-10" name="Set value" sid="797711746427196" type="TouchDPad">
-                                                    <param id="0" name="Instance variable">TouchID</param>
-                                                    <param id="1" name="Value">Touch.TouchID</param>
-                                                </action>
-                                                <action id="9" name="Set scale" sid="793021523895461" type="TouchDPad">
-                                                    <param id="0" name="Scale">3</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="156611426026105">
-                                    <conditions>
-                                        <condition id="3" name="On touched object" sid="131505258518113" type="Touch">
-                                            <param id="0" name="Object">TouchA</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="600728178781912" type="TouchA">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">-1</param>
+                                        <condition id="3" name="Is button down" sid="2124029133398757" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">13</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="447619448018485" type="TouchA">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Value">Touch.TouchID</param>
+                                        <action id="-10" name="Set value" sid="5782082524190614" type="VPad">
+                                            <param id="0" name="Instance variable">Down</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="262160649453265">
+                                <event-block any="1" sid="1926108309430191">
                                     <conditions>
-                                        <condition id="3" name="On touched object" sid="209901264075008" type="Touch">
-                                            <param id="0" name="Object">TouchB</param>
+                                        <condition id="5" name="Compare axis" sid="8926947896828816" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">-DEADZONE</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="397624656428695" type="TouchB">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">-1</param>
+                                        <condition id="3" name="Is button down" sid="8456102855754586" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">14</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="408389051827014" type="TouchB">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Value">Touch.TouchID</param>
+                                        <action id="-10" name="Set value" sid="5991560591094707" type="VPad">
+                                            <param id="0" name="Instance variable">Left</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="510145506237579">
+                                <event-block any="1" sid="344060131127289">
                                     <conditions>
-                                        <condition id="1" name="On any touch end" sid="743999052926286" type="Touch" />
-                                        <condition id="-7" name="Compare instance variable" sid="671198875808570" type="TouchA">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">Touch.TouchID</param>
+                                        <condition id="5" name="Compare axis" sid="8233388208284703" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">DEADZONE</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="5630637615353887" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">15</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="565112206990156" type="TouchA">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Value">-1</param>
+                                        <action id="-10" name="Set value" sid="2707172931762973" type="VPad">
+                                            <param id="0" name="Instance variable">Right</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="854691349928665">
+                                <event-block sid="7561975166971555">
                                     <conditions>
-                                        <condition id="1" name="On any touch end" sid="651209601277116" type="Touch" />
-                                        <condition id="-7" name="Compare instance variable" sid="442375252565031" type="TouchB">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">Touch.TouchID</param>
+                                        <condition id="3" name="Is button down" sid="4140440688929401" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="603323091113707" type="TouchB">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Value">-1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="455910532065050">
-                                    <conditions>
-                                        <condition id="1" name="On any touch end" sid="654408151890593" type="Touch" />
-                                        <condition id="-7" name="Compare instance variable" sid="958165339942242" type="TouchDPad">
-                                            <param id="0" name="Instance variable">TouchID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">Touch.TouchID</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="930891711947960" type="TouchDPad" />
-                                    </actions>
-                                </event-block>
-                                <event-block sid="618513189653011">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="347847542826581" type="System">
-                                            <param id="0" name="First value">TouchDPad.Count</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <variable constant="0" name="CanvasX" sid="677585580385193" static="0" type="number">0</variable>
-                                        <variable constant="0" name="CanvasY" sid="921640891091010" static="0" type="number">0</variable>
-                                        <variable constant="0" name="X" sid="759293089368178" static="0" type="number">0</variable>
-                                        <variable constant="0" name="Y" sid="891678533493877" static="0" type="number">0</variable>
-                                        <variable constant="1" name="TOUCH_ZONE" sid="845876408649566" static="0" type="number">24</variable>
-                                        <event-block sid="610269434621506">
-                                            <conditions>
-                                                <condition id="-1" name="Every tick" sid="682704827463364" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="241295947317404" type="System">
-                                                    <param id="0" name="Variable">CanvasX</param>
-                                                    <param id="1" name="Value">Touch.AbsoluteXForID(TouchDPad.TouchID)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="603206603122152" type="System">
-                                                    <param id="0" name="Variable">CanvasY</param>
-                                                    <param id="1" name="Value">Touch.AbsoluteYForID(TouchDPad.TouchID)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="431857125261668" type="System">
-                                                    <param id="0" name="Variable">X</param>
-                                                    <param id="1" name="Value">CanvasToLayerX(&quot;Touch&quot;, CanvasX, CanvasY)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="112872418539731" type="System">
-                                                    <param id="0" name="Variable">Y</param>
-                                                    <param id="1" name="Value">CanvasToLayerY(&quot;Touch&quot;, CanvasX, CanvasY)</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block any="1" sid="849498678331174">
-                                            <conditions>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="149136532260509" type="System">
-                                                    <param id="0" name="First value">Y</param>
-                                                    <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Second value">TouchDPad.Y - TOUCH_ZONE</param>
-                                                </condition>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="245292466831294" type="System">
-                                                    <param id="0" name="First value">Y</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">TouchDPad.Y + TOUCH_ZONE</param>
-                                                </condition>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="967450236767768" type="System">
-                                                    <param id="0" name="First value">X</param>
-                                                    <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Second value">TouchDPad.X - TOUCH_ZONE</param>
-                                                </condition>
-                                                <condition id="-8" inverted="1" name="Compare two values" sid="544315017466480" type="System">
-                                                    <param id="0" name="First value">X</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">TouchDPad.X + TOUCH_ZONE</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="863716251869027" type="TouchDPad">
-                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="603847719421748">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="258325089012481" type="System">
-                                                    <param id="0" name="First value">Y</param>
-                                                    <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Second value">TouchDPad.Y - TOUCH_ZONE</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Set value" sid="481648395770360" type="VPad">
-                                                    <param id="0" name="Instance variable">Up</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="4" name="Set animation" sid="920717036189369" type="TouchDPad">
-                                                    <param id="0" name="Animation">&quot;Up&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="809499936534555">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="830947680209022" type="System">
-                                                    <param id="0" name="First value">Y</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">TouchDPad.Y + TOUCH_ZONE</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Set value" sid="860432365548781" type="VPad">
-                                                    <param id="0" name="Instance variable">Down</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="4" name="Set animation" sid="570453754039380" type="TouchDPad">
-                                                    <param id="0" name="Animation">&quot;Down&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="833954426944866">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="233135193669790" type="System">
-                                                    <param id="0" name="First value">X</param>
-                                                    <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Second value">TouchDPad.X - TOUCH_ZONE</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Set value" sid="556463825592813" type="VPad">
-                                                    <param id="0" name="Instance variable">Left</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="4" name="Set animation" sid="424793745786569" type="TouchDPad">
-                                                    <param id="0" name="Animation">&quot;Left&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="590163719983862">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="167704999073270" type="System">
-                                                    <param id="0" name="First value">X</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">TouchDPad.X + TOUCH_ZONE</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Set value" sid="883303417801571" type="VPad">
-                                                    <param id="0" name="Instance variable">Right</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                                <action id="4" name="Set animation" sid="220620936006147" type="TouchDPad">
-                                                    <param id="0" name="Animation">&quot;Right&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="137791190479244">
-                                    <conditions>
-                                        <condition id="-11" name="For Each" sid="569721919845758" type="System">
-                                            <param id="0" name="Object">TouchButton</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <variable constant="0" name="CanvasX" sid="225156230173404" static="0" type="number">0</variable>
-                                        <variable constant="0" name="CanvasY" sid="246582234589773" static="0" type="number">0</variable>
-                                        <variable constant="0" name="X" sid="926381871953278" static="0" type="number">0</variable>
-                                        <variable constant="0" name="Y" sid="870371977719287" static="0" type="number">0</variable>
-                                        <event-block sid="557329239365404">
-                                            <conditions>
-                                                <condition id="-1" name="Every tick" sid="173663799341533" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="126163555432130" type="System">
-                                                    <param id="0" name="Variable">CanvasX</param>
-                                                    <param id="1" name="Value">Touch.AbsoluteXForID(TouchButton.TouchID)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="730704860160591" type="System">
-                                                    <param id="0" name="Variable">CanvasY</param>
-                                                    <param id="1" name="Value">Touch.AbsoluteYForID(TouchButton.TouchID)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="667242117862749" type="System">
-                                                    <param id="0" name="Variable">X</param>
-                                                    <param id="1" name="Value">CanvasToLayerX(&quot;Touch&quot;, CanvasX, CanvasY)</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="984069909766498" type="System">
-                                                    <param id="0" name="Variable">Y</param>
-                                                    <param id="1" name="Value">CanvasToLayerY(&quot;Touch&quot;, CanvasX, CanvasY)</param>
-                                                </action>
-                                                <action id="-13" name="Set boolean" sid="931511050509179" type="TouchButton">
-                                                    <param id="0" name="Instance variable">Pressed</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="160251371255659">
-                                            <conditions>
-                                                <condition id="-36" name="Pick overlapping point" sid="625346223352958" type="System">
-                                                    <param id="0" name="Object">TouchButton</param>
-                                                    <param id="1" name="X">X</param>
-                                                    <param id="2" name="Y">Y</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-13" name="Set boolean" sid="962182570938899" type="TouchButton">
-                                                    <param id="0" name="Instance variable">Pressed</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="139855616301050">
-                                            <conditions>
-                                                <condition id="-8" name="Is boolean instance variable set" sid="961696175702950" type="TouchButton">
-                                                    <param id="0" name="Instance variable">Pressed</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="338639669239050" type="TouchButton">
-                                                    <param id="0" name="Animation">&quot;Pressed&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="716865146817964">
-                                            <conditions>
-                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="358330221063880" type="TouchButton">
-                                                    <param id="0" name="Instance variable">Pressed</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="895539042729724" type="TouchButton">
-                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="161667019401513">
-                                    <conditions>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="785150688927401" type="TouchA">
-                                            <param id="0" name="Instance variable">Pressed</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Set value" sid="711878732618324" type="VPad">
+                                        <action id="-10" name="Set value" sid="4460183267387267" type="VPad">
                                             <param id="0" name="Instance variable">Confirm</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="866109962891615">
+                                <event-block sid="3430992126100434">
                                     <conditions>
-                                        <condition id="-8" name="Is boolean instance variable set" sid="119729908214219" type="TouchB">
-                                            <param id="0" name="Instance variable">Pressed</param>
+                                        <condition id="3" name="Is button down" sid="8796805238976963" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="461683378764747" type="VPad">
+                                        <action id="-10" name="Set value" sid="3124488412088355" type="VPad">
                                             <param id="0" name="Instance variable">Cancel</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="4634220243252997">
+                                    <conditions>
+                                        <condition id="3" name="Is button down" sid="5442644202940229" type="Gamepad">
+                                            <param id="0" name="Gamepad">ID</param>
+                                            <param id="1" name="Button">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="3912917353377025" type="VPad">
+                                            <param id="0" name="Instance variable">Menu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="604218839910410">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="793488743626818" type="System">
+                                            <param id="0" name="First value">ShowBuildInfo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="875824299097829">
+                                            <conditions>
+                                                <condition id="6" name="On button pressed" sid="915266872936008" type="Gamepad">
+                                                    <param id="0" name="Gamepad">ID</param>
+                                                    <param id="1" name="Button">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="798964339005069" type="Function">
+                                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="662664736138983">
+                                            <conditions>
+                                                <condition id="6" name="On button pressed" sid="114753292791027" type="Gamepad">
+                                                    <param id="0" name="Gamepad">ID</param>
+                                                    <param id="1" name="Button">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="692085839687806" type="Function">
+                                                    <param id="0" name="Name">&quot;PlayerHeal&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="4884121587429975" title="Keyboard">
+                    <sub-events>
+                        <event-block sid="674196488202885">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="672736688685539" type="System">
+                                    <param id="0" name="Variable">ChangingName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="1936143924239781">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="3552193861153495" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="4868003248484891" type="Keyboard">
+                                            <param id="0" name="Key">87</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="5408598788897175" type="VPad">
+                                            <param id="0" name="Instance variable">Up</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="5325358493886754">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="594305958852773" type="Keyboard">
+                                            <param id="0" name="Key">40</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="1628045043863816" type="Keyboard">
+                                            <param id="0" name="Key">83</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="2778876906348653" type="VPad">
+                                            <param id="0" name="Instance variable">Down</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="7872809225198566">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="1299449188102976" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="6476670649189529" type="Keyboard">
+                                            <param id="0" name="Key">65</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="6936900522333045" type="VPad">
+                                            <param id="0" name="Instance variable">Left</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="2614740999858778">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="7423979685350929" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="6992990226848274" type="Keyboard">
+                                            <param id="0" name="Key">68</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="2987165759825812" type="VPad">
+                                            <param id="0" name="Instance variable">Right</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="1497366882496331">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="1186023697088874" type="Keyboard">
+                                            <param id="0" name="Key">90</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="5599487570691262" type="Keyboard">
+                                            <param id="0" name="Key">13</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="6612361141996722" type="VPad">
+                                            <param id="0" name="Instance variable">Confirm</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="4623232669904996">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="5021788616537434" type="Keyboard">
+                                            <param id="0" name="Key">88</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="1588947091940208" type="Keyboard">
+                                            <param id="0" name="Key">16</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="4252777994439934" type="VPad">
+                                            <param id="0" name="Instance variable">Cancel</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="1556078509265339">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="1509728579883262" type="Keyboard">
+                                            <param id="0" name="Key">67</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="596894329683083" type="Keyboard">
+                                            <param id="0" name="Key">17</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="4792830248470232" type="VPad">
+                                            <param id="0" name="Instance variable">Menu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="124372229417503">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="417608230050438" type="System">
+                                            <param id="0" name="First value">ShowBuildInfo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="823961976525117">
+                                            <conditions>
+                                                <condition id="0" name="On key pressed" sid="911236586408709" type="Keyboard">
+                                                    <param id="0" name="Key">113</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="991183945280164" type="Function">
+                                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="505661387560538">
+                                            <conditions>
+                                                <condition id="0" name="On key pressed" sid="563973233769698" type="Keyboard">
+                                                    <param id="0" name="Key">114</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="337955621991573" type="Function">
+                                                    <param id="0" name="Name">&quot;PlayerHeal&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -879,5 +464,1455 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-group description="" sid="334213113683277" title="Name Selection" />
+        <event-block sid="673231041092777">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="286976472554687" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="389756830315242" type="RPGText">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;PlayerQuote&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="721239334791067">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="245476848977570" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;CARNIG&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="960907302129577" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KCKARN&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="960426118365527" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KAYCAR&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="963172108190382" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KCK&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="288507472710758" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KC&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="283838974601611" type="RPGText">
+                            <param id="0" name="Instance variable">RainbowColor</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="409308111700144" type="RPGText">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">self.RainbowColor</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="456362905506714" type="Potassium">
+                            <param id="0" name="Instance variable">RainbowColor</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="918348131123888" type="Potassium">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">self.RainbowColor</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="715604295489790">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="302231326438646" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="269779376472860" type="RPGText">
+                            <param id="0" name="Instance variable">RainbowColor</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="479406522646492" type="RPGText">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="806497512157526" type="Potassium">
+                            <param id="0" name="Instance variable">RainbowColor</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="656265425837639" type="Potassium">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="699715030281775" type="Potassium" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="759430366497645">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="433926549265834" type="RPGText">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;PlayerQuote&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="346486067615120" type="RPGText">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="338037164235701" type="RPGText">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="652120993378613">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="821402873427178" type="Potassium">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="766020455997841" type="Potassium">
+                    <param id="0" name="Instance variable">RainbowColor</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="ChangingName" sid="357418270309291" static="0" type="number">0</variable>
+        <event-block sid="106476642528929">
+            <conditions>
+                <condition id="2" name="On clicked" sid="479127883284472" type="PlayerName" />
+                <condition id="-14" name="Compare variable" sid="319427989284590" type="System">
+                    <param id="0" name="Variable">ChangingName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Set focused" sid="288282249771561" type="PlayerName" />
+                <action id="5" name="Set read-only" sid="316588008263499" type="PlayerName">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="0" name="Play" sid="565564602989740" type="Audio">
+                    <param id="0" name="Audio file">MenuSelect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="717021104119514" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Opacity">25</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="644466625163689" type="PlayerName">
+                    <param id="0" name="Property name">&quot;opacity&quot;</param>
+                    <param id="1" name="Value">&quot;100%&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="813745989588685" type="PlayerName">
+                    <param id="0" name="Property name">&quot;user-select&quot;</param>
+                    <param id="1" name="Value">&quot;text&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="462245656501751" type="PlayerName">
+                    <param id="0" name="Property name">&quot;-moz-user-select&quot;</param>
+                    <param id="1" name="Value">&quot;text&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="178925666562291" type="PlayerName">
+                    <param id="0" name="Property name">&quot;-webkit-user-select&quot;</param>
+                    <param id="1" name="Value">&quot;text&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="116123226792306" type="PlayerName">
+                    <param id="0" name="Y">100</param>
+                </action>
+                <action id="-3" name="Create object" sid="196440081038664" type="System">
+                    <param id="0" name="Object to create">DefaultFont</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="502337378988901" type="DefaultFont">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Value">&quot;PQInfo0&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="376654696114150" type="DefaultFont">
+                    <param id="0" name="X">PlayerName.X - 16</param>
+                    <param id="1" name="Y">PlayerName.Y - 24</param>
+                </action>
+                <action id="0" name="Set text" sid="326749516677565" type="DefaultFont">
+                    <param id="0" name="Text">&quot;Your name is:&quot;</param>
+                </action>
+                <action id="-7" name="Set size" sid="552009057552510" type="DefaultFont">
+                    <param id="0" name="Width">640</param>
+                    <param id="1" name="Height">64</param>
+                </action>
+                <action id="-3" name="Create object" sid="841900352871192" type="System">
+                    <param id="0" name="Object to create">DefaultFont</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="249492720957989" type="DefaultFont">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Value">&quot;PQInfo1&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="465511798582301" type="DefaultFont">
+                    <param id="0" name="X">PlayerName.X - 72</param>
+                    <param id="1" name="Y">PlayerName.Y + 40</param>
+                </action>
+                <action id="0" name="Set text" sid="546866666524912" type="DefaultFont">
+                    <param id="0" name="Text">&quot;Click anywhere else to exit.&quot;</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="916613102265128" type="DefaultFont">
+                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="345515052741046" type="DefaultFont">
+                    <param id="0" name="Width">640</param>
+                    <param id="1" name="Height">64</param>
+                </action>
+                <action id="-9" name="Set value" sid="928058090740808" type="System">
+                    <param id="0" name="Variable">ChangingName</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="363893664529107" type="Function">
+                    <param id="0" name="Name">&quot;NameQuote&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="810993478626225">
+            <conditions>
+                <condition id="0" name="On click" sid="903271900878507" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="533603840334681" type="Mouse">
+                    <param id="0" name="Object">PlayerName</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="501766931541601" type="System">
+                    <param id="0" name="Variable">ChangingName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set unfocused" sid="351929527009507" type="PlayerName" />
+                <action id="5" name="Set read-only" sid="877620151803527" type="PlayerName">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="198998365592482" type="PlayerName">
+                    <param id="0" name="Property name">&quot;opacity&quot;</param>
+                    <param id="1" name="Value">&quot;25%&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="997129800102506" type="PlayerName">
+                    <param id="0" name="Property name">&quot;user-select&quot;</param>
+                    <param id="1" name="Value">&quot;none&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="113636482934346" type="PlayerName">
+                    <param id="0" name="Property name">&quot;-moz-user-select&quot;</param>
+                    <param id="1" name="Value">&quot;none&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="114998057589388" type="PlayerName">
+                    <param id="0" name="Property name">&quot;-webkit-user-select&quot;</param>
+                    <param id="1" name="Value">&quot;none&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="866435040834980" type="PlayerName">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="183930937696698" type="System">
+                    <param id="0" name="Variable">ChangingName</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="873771053674100" type="Function">
+                    <param id="0" name="Name">&quot;UpdatePlayerName&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="382372665554891">
+            <conditions>
+                <condition id="0" name="On function" sid="423396542551387" type="Function">
+                    <param id="0" name="Name">&quot;GasterName&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set unfocused" sid="190631925217568" type="PlayerName" />
+                <action id="5" name="Set read-only" sid="727728495612375" type="PlayerName">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="932065659507902" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="917507757506458" type="PlayerName">
+                    <param id="0" name="Property name">&quot;opacity&quot;</param>
+                    <param id="1" name="Value">&quot;25%&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="869006114789818" type="PlayerName">
+                    <param id="0" name="Property name">&quot;user-select&quot;</param>
+                    <param id="1" name="Value">&quot;none&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="641855751396883" type="PlayerName">
+                    <param id="0" name="Property name">&quot;-moz-user-select&quot;</param>
+                    <param id="1" name="Value">&quot;none&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="722797202814336" type="PlayerName">
+                    <param id="0" name="Property name">&quot;-webkit-user-select&quot;</param>
+                    <param id="1" name="Value">&quot;none&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="567929110141441" type="PlayerName">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="297790855834736" type="System">
+                    <param id="0" name="Variable">ChangingName</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="737651265162917" type="PlayerName">
+                    <param id="0" name="Text">&quot;Chara&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="936228931989621" type="Function">
+                    <param id="0" name="Name">&quot;UpdatePlayerName&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="351082807846265" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="1" name="Close" sid="509254992972988" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="413579871909911">
+            <conditions>
+                <condition id="0" name="On function" sid="943864085639631" type="Function">
+                    <param id="0" name="Name">&quot;NameQuote&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="785417503066036" type="System">
+                    <param id="0" name="Object to create">PlayerNameFont</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="474700189154777" type="PlayerNameFont">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Value">&quot;PlayerQuote&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="842421526070671" type="PlayerNameFont">
+                    <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; &quot;~Placeholder~&quot; &amp; &quot;&apos;&apos;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="154004650675771" type="PlayerNameFont">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">PlayerName.Y + 64</param>
+                </action>
+                <action id="-7" name="Set size" sid="620350407398982" type="PlayerNameFont">
+                    <param id="0" name="Width">640</param>
+                    <param id="1" name="Height">128</param>
+                </action>
+                <action id="7" name="Set horizontal alignment" sid="849027052067079" type="PlayerNameFont">
+                    <param id="0" name="Horizontal alignment">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="201478238131468">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="638975202975218" type="System" />
+                <condition id="-14" name="Compare variable" sid="656771995464972" type="System">
+                    <param id="0" name="Variable">SimulatorMode</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">MODE_MENU</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="820678980292016">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="259733133677816" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="242690934335600" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot; &quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="682759950759733" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;  &quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="241695811815178" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; DefaultQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="742155851467638" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="839375253666902" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="168933786777849" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="926846464339220" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="472962872363941" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="833059280249966">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="222741657176352" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="255634476281938" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot; &quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="812833667488876" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;  &quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="224789112117285" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; &quot;Name the fallen child!&quot; &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="466227038104329" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="708917643532953" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="821424673385901" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="267426338263130" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="970561919730403" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="893865017905021">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="633562472922329" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;CHARA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="661576794319316" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; CharaQuote &amp; &quot;&apos;&apos;&quot; &amp; newline &amp; &quot;=)&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="236892987559740" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="204992688648337" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="446158696614768" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="350694961269853" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="277369142863153" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="551232306648380">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="769119698735820" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MERCY&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="604735979305986" type="PlayerNameFont">
+                            <param id="0" name="Text">MercyQuote &amp; newline &amp; &quot;=)&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="789017178118742" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="959464304173068" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="672209075722079" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="785771200612165" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="752607189255803" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="434041764689611">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="115189334079508" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MURDER&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="990275591066363" type="PlayerNameFont">
+                            <param id="0" name="Text">MurderQuote</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="162427704832531" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="363514377675442" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="732893351648094" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="984940574886987" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="401463375974901" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="810700605304733">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="929088627820393" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KRIS&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="839397752419882" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; KrisQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="696303108414877" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="417189353112046" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="270069000285379" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="847343758467060" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="196452066142134" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221646685095441">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="615893248595960" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;FRISK&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="555382181786944" type="PlayerNameFont">
+                            <param id="0" name="Text">FriskQuote</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="931920739987527" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="724236708691820" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="245262019056499" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="264382854851604" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="720971716200941" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">18</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="449735336396224">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="121970577364987" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;CARNIG&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="813175437776178" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KCKARN&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="601582569285184" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KAYCAR&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="467114821916633" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KCK&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="872592697626852" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KC&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="741470634719166" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; KCKQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="790678853686297" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">97</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="740474117369614" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">87</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="804071522178656" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">3</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="262745921625524" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="949871461614514" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">&quot;69&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="941294042739156">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="854878704517116" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;KAYOS&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="161612239946506" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;Generic.&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="579375809495269" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="664917459877126" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="740707835682813" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="728132214739990" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="975090159920416" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">&quot;19&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="741018484340149">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="193609215173770" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;UTAM&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="814873852386221" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; UtamQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="562841337183194" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="850368998800525" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">50</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="883060746385023" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="273870153561175" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="229798950825406" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">69</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="430915913405088">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="192861456871650" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;AAAAAA&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="489896317525932" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;OW&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="162581233883896" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; PainQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="159328614514962" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="668178881083135" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="595826647477573" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="819485066935066" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="334180984357304" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">&quot;??&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="963710665218622">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="143631994436197" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;BBBBBB&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="959724331453502" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;CCCCCC&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="793381082303802" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DDDDDD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="236613103768806" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; CreativeQuote &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="239579376810831" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="792777187039516" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="154167864033050" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="195241400723045" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="228190041498337" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">&quot;??&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="253625334380787">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="725067393647926" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;EEEEEE&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="563146419829987" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;E&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="601487045981675" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="762823945770334" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="493982436647395" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="455998075669076" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="996040713499603" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">&quot;E&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="549358124945183">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="296500942891735" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;OWO&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="141033400943826" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; &quot;wutz dis?&quot; &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="766296768347385" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="436239644923763" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="514167231912725" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="808373580043773" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="583867795980111" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">&quot;19&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="325281580130686">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="327852376114430" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SNOWY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="897075642053722" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;SNEW&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="900119671228491" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;NOX&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="365218394269488" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;GAY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="708605657198246" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;HOMO&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="248287433160045" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;GAYMER&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="126227590939790" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;URMOM&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="500755500400664" type="PlayerNameFont">
+                            <param id="0" name="Text">HomoQuote</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="798547687553667" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="250313065325126" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="113635786797425" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="459511105057317" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="696267129754566" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">69</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="930299690973504">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="195598401857890" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MOMMY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="552243205932801" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DADDY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="173465265707358" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MILF&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="153504195571977" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DILF&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="747670567735657" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;No, stop.&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="617051551230989" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="259235102118860" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="590890260620112" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="334333582599420" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="232565878665830" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="248694962253594">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="229461606472578" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;GASTER&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="227923645237951" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;NIGG&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="370851300215274" type="Function">
+                            <param id="0" name="Name">&quot;GasterName&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="531678128948881">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="733435843802127" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;FLOWEY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="635517284584378" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;ASRIEL&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="933598635247830" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;AZZY&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="728324309321316" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;&apos;&apos;&quot; &amp; &quot;Please, don&apos;t hurt me..&quot; &amp; &quot;&apos;&apos;&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="989235844381477" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="956246188968586" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="367521367978310" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="530318531524396" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="905762407789300" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">99</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="451385103997017">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="183113310487632" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DEVBUG&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="392349806650916" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;DEBUG&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="180270306362889" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="429103121503320" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="811358993734605" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="772824497171378" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="966907903063618" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="375577751092236">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="462714330268752" type="System">
+                                    <param id="0" name="Variable">ShowBuildInfo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="605456919317861" type="PlayerNameFont">
+                                    <param id="0" name="Text">&quot;ALREADY ENABLED&quot;</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="681142598180827" type="PlayerNameFont">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="100176350096843" type="PlayerNameFont">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="326899133188236" type="PlayerNameFont">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="790589568257736">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="106933106845111" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;   &quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="855836933785609" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;    &quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="695633532311432" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;     &quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="394176327535022" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;      &quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="885031151472368" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;You&apos;re not invisible.&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="201488759681171" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="995502613137247" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="536028109595447" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="400987109215049" type="PlayerNameFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="509506825859054" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="568457306920583">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="515457615541461" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;PAPYRU&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="275007560223779" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;CATTY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="634631327519560" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;BRATTY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="590172104713624" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;TORIEL&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="774314816835905" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;TORI&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="989099195229536" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MOM&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="306394442037167" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MOTHER&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="274373441599017" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MOMM&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="288654488955303" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;UNDYNE&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="879979060746905" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;ALPHYS&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="897975473071110" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;ALPHY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="770244137079524" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;METTA&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="199080069102375" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;MTT&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="110831498154226" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;METT&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="903803720384223" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;ASGORE&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="942267259243594" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;GOREY&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="995362176189373" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DAD&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="535320038833277" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;FATHER&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="689093435959106" type="System">
+                            <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;DADD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="243783909641136" type="PlayerNameFont">
+                            <param id="0" name="Text">&quot;But nobody came.&quot; &amp; newline &amp; &quot;=)&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="775782361934735" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="877766881123428" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="251745142479495" type="PlayerNameFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="948206834405303" type="PlayerNameFont">
+                            <param id="0" name="Scale">3</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="321979803318997" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="722976516734113">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="828204592127746" type="System">
+                            <param id="0" name="Variable">ChangingName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="464915167988715" type="PlayerNameFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PlayerQuote&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="530698364127941" type="PlayerNameFont" />
+                    </actions>
+                </event-block>
+                <event-block sid="255878477421869">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="466884286261230" type="System">
+                            <param id="0" name="Variable">ChangingName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="789277982168609" type="DefaultFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PQInfo0&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="368548993218606" type="DefaultFont" />
+                    </actions>
+                </event-block>
+                <event-block sid="867158944851497">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="651333055003175" type="System">
+                            <param id="0" name="Variable">ChangingName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="201845567804136" type="DefaultFont">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PQInfo1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="343527065330822" type="DefaultFont" />
+                    </actions>
+                </event-block>
+                <event-block sid="767187504633354">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="325846288124469" type="System">
+                            <param id="0" name="Variable">ChangingName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="615270704920701">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="638017759343257" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="238751438719025" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot; &quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="719831572066561" type="System">
+                                    <param id="0" name="First value">uppercase(PlayerName.Text)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;  &quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="492518105526308" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Value">19</param>
+                                </action>
+                                <action id="0" name="Set text" sid="753399895068750" type="PlayerName">
+                                    <param id="0" name="Text">&quot;Chara&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

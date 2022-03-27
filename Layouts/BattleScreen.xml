@@ -53,6 +53,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -60,6 +61,13 @@
                                 <blue>1</blue>
                                 <green>1</green>
                                 <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -102,6 +110,7 @@
                         <CurrentChar>0</CurrentChar>
                         <T>0</T>
                         <Timeout>0</Timeout>
+                        <RainbowColor>0</RainbowColor>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Tint">
@@ -111,6 +120,13 @@
                                 <red>1</red>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
+                            </parameters>
+                        </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -118,7 +134,7 @@
                         <x>64</x>
                         <y>402</y>
                         <z>0</z>
-                        <width>192</width>
+                        <width>355</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -137,8 +153,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>258.73223877</x>
-                        <y>418</y>
+                        <x>280.458099365</x>
+                        <y>413.129119873</y>
                         <z>0</z>
                         <width>23</width>
                         <height>10</height>
@@ -156,11 +172,20 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>428.902008057</x>
-                        <y>418</y>
+                        <x>412.458099365</x>
+                        <y>424</y>
                         <z>0</z>
                         <width>23</width>
                         <height>10</height>
@@ -168,38 +193,6 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="UIBorder" uid="69">
-                    <properties>
-                        <left-margin>8</left-margin>
-                        <right-margin>8</right-margin>
-                        <top-margin>8</top-margin>
-                        <bottom-margin>8</bottom-margin>
-                        <edges>Stretch</edges>
-                        <fill>Transparent</fill>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
-                    </properties>
-                    <instance-variables>
-                        <TargetLeft>33</TargetLeft>
-                        <TargetTop>251</TargetTop>
-                        <TargetRight>608</TargetRight>
-                        <TargetBottom>391</TargetBottom>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>55.20111084</x>
-                        <y>396.074157715</y>
-                        <z>0</z>
-                        <width>492.031005859</width>
-                        <height>33.268001556</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -225,15 +218,65 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CombatZone" uid="7">
+                <instance type="KRHPFilter" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Darken" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>805.837158203</x>
+                        <y>585.262268066</y>
+                        <z>0</z>
+                        <width>3.013497591</width>
+                        <height>1.513419032</height>
+                        <depth>0</depth>
+                        <hotspotX>7.8125</hotspotX>
+                        <hotspotY>7.8125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="KRHPFilter" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Darken" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>731.668701172</x>
+                        <y>568.343139648</y>
+                        <z>0</z>
+                        <width>36.784126282</width>
+                        <height>21.398887634</height>
+                        <depth>0</depth>
+                        <hotspotX>7.8125</hotspotX>
+                        <hotspotY>7.8125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="UIBorder" uid="82">
                     <properties>
                         <left-margin>8</left-margin>
                         <right-margin>8</right-margin>
                         <top-margin>8</top-margin>
                         <bottom-margin>8</bottom-margin>
                         <edges>Stretch</edges>
-                        <fill>Transparent</fill>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <fill>Stretch</fill>
+                        <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                         <seams>Overlap</seams>
                     </properties>
@@ -242,16 +285,24 @@
                         <TargetTop>251</TargetTop>
                         <TargetRight>608</TargetRight>
                         <TargetBottom>391</TargetBottom>
-                        <InfoText></InfoText>
                     </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>240</y>
+                        <x>85.28099823</x>
+                        <y>396.074005127</y>
                         <z>0</z>
-                        <width>576</width>
-                        <height>144</height>
+                        <width>461.95098877</width>
+                        <height>33.268001556</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -287,13 +338,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>362.74798584</x>
-                        <y>413.425994873</y>
+                        <x>346.458099365</x>
+                        <y>413.5</y>
                         <z>0</z>
-                        <width>150</width>
+                        <width>111</width>
                         <height>23</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.504504502</hotspotX>
                         <hotspotY>0.521739125</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -307,8 +358,8 @@
                     <blend-mode>9</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
-                        <y>402</y>
+                        <x>290.458099365</x>
+                        <y>401.34487915</y>
                         <z>0</z>
                         <width>110</width>
                         <height>27.553405762</height>
@@ -324,6 +375,15 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>0</blue>
+                                <green>0</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>9</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -498,7 +558,7 @@
                         <y>-176</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>18</height>
+                        <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -729,7 +789,50 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="CombatZone" uid="7">
+                    <properties>
+                        <left-margin>8</left-margin>
+                        <right-margin>8</right-margin>
+                        <top-margin>8</top-margin>
+                        <bottom-margin>8</bottom-margin>
+                        <edges>Stretch</edges>
+                        <fill>Transparent</fill>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                        <seams>Overlap</seams>
+                    </properties>
+                    <instance-variables>
+                        <TargetLeft>33</TargetLeft>
+                        <TargetTop>251</TargetTop>
+                        <TargetRight>608</TargetRight>
+                        <TargetBottom>391</TargetBottom>
+                        <InfoText></InfoText>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="Tint">
+                            <parameters>
+                                <blue>1</blue>
+                                <green>1</green>
+                                <red>1</red>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>240</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>144</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Touch" sid="632984773778133">
@@ -755,8 +858,8 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
