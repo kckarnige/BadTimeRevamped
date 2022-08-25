@@ -18,10 +18,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <show-collision-polys>0</show-collision-polys>
     <translucent-inactive-layers>0</translucent-inactive-layers>
     <properties>
-        <property expanded="1" name="Layout properties" />
         <property expanded="0" name="Layout Size" />
         <property expanded="0" name="Margins" />
-        <property expanded="1" name="Effects" />
     </properties>
     <active-layer name="Layer 0" />
     <layers>

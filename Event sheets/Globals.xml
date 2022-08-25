@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Globals</name>
     <events>
+        <variable constant="0" name="Attacking" sid="629694586569741" static="0" type="number">1</variable>
+        <variable constant="0" name="SkipPhase" sid="511835939490090" static="0" type="number">0</variable>
+        <variable constant="0" name="UsedItem" sid="390750793034360" static="0" type="number">0</variable>
         <variable constant="0" name="Level" sid="112716587815978" static="0" type="number">19</variable>
         <variable constant="1" name="HEARTMODE_RED" sid="2975789364452609" static="0" type="number">0</variable>
         <variable constant="1" name="HEARTMODE_BLUE" sid="6376919357343526" static="0" type="number">1</variable>

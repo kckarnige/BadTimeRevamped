@@ -198,6 +198,11 @@
                             <param id="1" name="Value">&quot;sans_platforms4hard&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
+                        <action id="5" name="Push" sid="967749804920870" type="AttackLoader">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Value">&quot;sans_postedcringe&quot;</param>
+                            <param id="2" name="Axis">0</param>
+                        </action>
                         <action id="5" name="Push" sid="904902605703142" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_randomblaster1&quot;</param>

@@ -12,20 +12,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">BattleScreen</layout>
         <layout order="3">MainMenu</layout>
-        <layout order="12">System</layout>
         <event-sheet order="1">Battle</event-sheet>
-        <event-sheet active="1" order="2">InputManagement</event-sheet>
+        <event-sheet order="2">InputManagement</event-sheet>
         <event-sheet order="4">Globals</event-sheet>
-        <event-sheet order="5">MainMenu</event-sheet>
-        <event-sheet order="6">BuildInfo</event-sheet>
+        <event-sheet active="1" order="5">BuildInfo</event-sheet>
+        <event-sheet order="6">MainMenu</event-sheet>
         <event-sheet order="7">Menus</event-sheet>
         <event-sheet order="8">Fonts</event-sheet>
-        <event-sheet order="9">RPGText</event-sheet>
-        <event-sheet order="10">RainbowText</event-sheet>
-        <event-sheet order="11">Timeline</event-sheet>
-        <event-sheet order="13">PlayerNameQuote</event-sheet>
-        <event-sheet order="14">AttackLoader</event-sheet>
-        <event-sheet order="15">Items</event-sheet>
+        <event-sheet order="9">Items</event-sheet>
+        <event-sheet order="10">MusicFadeOut</event-sheet>
+        <event-sheet order="11">RPGText</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -36,13 +32,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1">
         <family expanded="0" name="BoneStab" />
         <family expanded="0" name="Bone" />
-        <family expanded="1" name="RPGText" />
+        <family expanded="0" name="RPGText" />
         <family expanded="0" name="UIButtons" />
         <family expanded="0" name="Attack9Patch" />
         <family expanded="0" name="AttackSprite" />
         <family expanded="0" name="AttackTiled" />
         <family expanded="0" name="TouchButton" />
-        <family expanded="1" name="UIBorderStuff" />
+        <family expanded="0" name="UIBorderStuff" />
+        <family expanded="0" name="GasterBlast" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -84,6 +81,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SansSweat/" />
         <folder expanded="1" path="animation-folder/SansTorso/" />
         <folder expanded="1" path="animation-folder/SpeechBubble/" />
+        <folder expanded="1" path="animation-folder/SansPhaseIcon/" />
+        <folder expanded="1" path="animation-folder/SansShade/" />
         <folder expanded="1" path="animation-folder/GasterBlaster/" />
         <folder expanded="1" path="animation-folder/MenuBoneBottom/" />
         <folder expanded="1" path="animation-folder/MenuBoneLeft/" />

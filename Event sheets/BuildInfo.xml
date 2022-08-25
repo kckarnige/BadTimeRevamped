@@ -81,6 +81,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="636323771512168">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="939143998940880" type="System">
+                    <param id="0" name="First value">uppercase(Name)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;DEVNOT&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="706883156518169" type="System">
+                    <param id="0" name="Variable">ShowBuildInfo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="916532625065565">
             <conditions>
                 <condition id="0" name="On key pressed" sid="400818467219155" type="Keyboard">
