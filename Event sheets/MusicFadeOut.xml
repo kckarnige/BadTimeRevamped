@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MusicFadeOut</name>
+    <events>
+        <variable constant="0" name="musVol" sid="284276639602497" static="0" type="number">0</variable>
+        <variable constant="0" name="musSpeed" sid="455683364002338" static="0" type="number">1</variable>
+        <variable constant="0" name="musFade" sid="388597713431500" static="0" type="number">0</variable>
+        <event-block sid="220984434774316">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="992332837318931" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set volume" sid="908179513152048" type="Audio">
+                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                    <param id="1" name="dB">musVol</param>
+                </action>
+                <action id="5" name="Set playback rate" sid="530143658310149" type="Audio">
+                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                    <param id="1" name="Playback rate">musSpeed</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170058123607642">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="666709915835654" type="System">
+                    <param id="0" name="First value">musFade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="630399748790005" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="306735847636785" type="System">
+                    <param id="0" name="Variable">musVol</param>
+                    <param id="1" name="Value">0.5</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="360706879383535" type="System">
+                    <param id="0" name="Variable">musSpeed</param>
+                    <param id="1" name="Value">0.01</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="252642704165584">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="192153163080472" type="System">
+                    <param id="0" name="First value">musFade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="883468364585809" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="102341711759483" type="System">
+                    <param id="0" name="Variable">musVol</param>
+                    <param id="1" name="Value">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="434101382193737">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="105017996491157" type="System">
+                    <param id="0" name="First value">musVol</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">-100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="150720624594297" type="System">
+                    <param id="0" name="Variable">musFade</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="22" name="Set paused" sid="859128136321881" type="Audio">
+                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="556592106126756" type="System">
+                    <param id="0" name="Variable">musVol</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="723046147185729" type="System">
+                    <param id="0" name="Variable">musSpeed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="700579468348823">
+            <conditions>
+                <condition id="0" name="On function" sid="685071464286935" type="Function">
+                    <param id="0" name="Name">&quot;musFade&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="953946387678416" type="System">
+                    <param id="0" name="Variable">musFade</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="221027390645774">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="691652477864773" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="322444872848365" type="System">
+                            <param id="0" name="Variable">musFade</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="619718254268277">
+            <conditions>
+                <condition id="0" name="On function" sid="659786390951384" type="Function">
+                    <param id="0" name="Name">&quot;BGFadeFinale&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="176494530745181" type="BattleBackground">
+                    <param id="0" name="Animation">&quot;FadeToVisibleFinale&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="580451895614479" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="607700418508226" type="Audio">
+                    <param id="0" name="Audio file">Flash</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="950206372038861" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="564939792709410" type="Audio">
+                    <param id="0" name="Audio file">Flash</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="512512645640964" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="874662300687675" type="Audio">
+                    <param id="0" name="Audio file">Flash</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

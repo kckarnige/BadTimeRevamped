@@ -22,10 +22,6 @@
                     <param id="0" name="Name">&quot;RegisterItem&quot;</param>
                     <param id="1" name="Parameter {n}">0{###}60{###}&quot;Face Steak&quot;{###}&quot;Steak&quot;</param>
                 </action>
-                <action id="0" name="Call function" sid="311680167489542" type="Function">
-                    <param id="0" name="Name">&quot;RegisterItem&quot;</param>
-                    <param id="1" name="Parameter {n}">0{###}45{###}&quot;Snowman Piece&quot;{###}&quot;SnowPiece&quot;</param>
-                </action>
                 <action id="0" name="Call function" sid="8628336839377844" type="Function">
                     <param id="0" name="Name">&quot;RegisterItem&quot;</param>
                     <param id="1" name="Parameter {n}">0{###}40{###}&quot;Legendary Hero&quot;{###}&quot;L. Hero&quot;</param>
@@ -63,11 +59,6 @@
                     <param id="0" name="X">ItemDB.Width-1</param>
                     <param id="1" name="Y">3</param>
                     <param id="2" name="Value">Function.Param(3)</param>
-                </action>
-                <action id="3" name="Set at XY" sid="569924119737199" type="ItemDB">
-                    <param id="0" name="X">ItemDB.Width-1</param>
-                    <param id="1" name="Y">4</param>
-                    <param id="2" name="Value">Function.Param(4)</param>
                 </action>
             </actions>
         </event-block>

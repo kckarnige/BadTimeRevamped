@@ -144,12 +144,6 @@
                 <condition id="-2" name="On start of layout" sid="301026708660067" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="376828649753247" type="Audio">
-                    <param id="0" name="Audio file">mus_options_fall</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
-                </action>
                 <action id="-3" name="Create object" sid="944495815567582" type="System">
                     <param id="0" name="Object to create">Text</param>
                     <param id="1" name="Layer">0</param>
@@ -173,6 +167,158 @@
                 </action>
                 <action id="-9" name="Set value" sid="873915721110057" type="System">
                     <param id="0" name="Variable">Dead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="173299274673843" type="System">
+                    <param id="0" name="Variable">UsedItem</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="304307819878449">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="354663769613214" type="System">
+                    <param id="0" name="First value">ShowBuildInfo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="424862047957166">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="750950791459313" type="System">
+                            <param id="0" name="First value">SansPhaseIcon.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="970141255662701" type="System">
+                            <param id="0" name="Object to create">SansPhaseIcon</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">24</param>
+                            <param id="3" name="Y">460</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="925110060939125" type="SansPhaseIcon">
+                            <param id="0" name="Scale">1.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="655866954514914">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="349468305400426" type="Keyboard">
+                            <param id="0" name="Key">116</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="868362379168208" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="213915405497167" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">SansPhaseIcon</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="966817749164417">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="509896636799407" type="System">
+                                    <param id="0" name="First value">PlayerName.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="434987959219375" type="System">
+                                    <param id="0" name="Variable">SkipPhase</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="497579315414253" type="Audio">
+                                    <param id="0" name="Audio file">MenuCursor</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="283109700330204">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="428016382960462" type="System">
+                            <param id="0" name="First value">SkipPhase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="506938928905963" type="SansPhaseIcon">
+                            <param id="0" name="Animation">&quot;Phase1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="363807458015413">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="937977278861725" type="System">
+                            <param id="0" name="First value">SkipPhase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="253457889783497" type="SansPhaseIcon">
+                            <param id="0" name="Animation">&quot;Phase2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="612204693575795">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="742988747547024" type="System">
+                            <param id="0" name="First value">SkipPhase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="157677904151718" type="SansPhaseIcon">
+                            <param id="0" name="Animation">&quot;Phase3&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="247484647673322">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="594946874714715" type="System">
+                            <param id="0" name="First value">SkipPhase</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="179717051767597" type="System">
+                            <param id="0" name="Variable">SkipPhase</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="843561855276330">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="940489064623877" type="System">
+                    <param id="0" name="First value">ShowBuildInfo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="246022157633921" type="SansPhaseIcon" />
+                <action id="-9" name="Set value" sid="637301042656304" type="System">
+                    <param id="0" name="Variable">SkipPhase</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -925,6 +1071,36 @@
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block any="1" sid="923443751354061">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="737794922911234" type="System">
+                                    <param id="0" name="First value">PlayerName.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="882015046670943" type="SansPhaseIcon">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="123539747883893">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="612511023031039" type="System">
+                                    <param id="0" name="First value">PlayerName.Count</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="610781967557801" type="SansPhaseIcon">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="779665683820700">
                     <conditions>
@@ -1425,10 +1601,13 @@
                         <action id="-9" name="Destroy" sid="403705870680733" type="Potassium" />
                     </actions>
                     <sub-events>
-                        <event-block any="1" sid="632339889403895">
+                        <event-block sid="632339889403895">
                             <conditions>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="276643300232146" type="Audio">
                                     <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </condition>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="126300447247841" type="Audio">
+                                    <param id="0" name="Tag">&quot;WinJingle&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1499,10 +1678,13 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block any="1" sid="705855464714544">
+                                <event-block sid="705855464714544">
                                     <conditions>
                                         <condition id="5" inverted="1" name="Is tag playing" sid="622554837385992" type="Audio">
                                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                        </condition>
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="996514852700597" type="Audio">
+                                            <param id="0" name="Tag">&quot;WinJingle&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>

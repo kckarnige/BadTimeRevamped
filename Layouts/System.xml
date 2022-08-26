@@ -1509,6 +1509,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="SansPhaseIcon" uid="86">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <T>0</T>
+                        <OffsetX>0</OffsetX>
+                        <OffsetY>0</OffsetY>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>580</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
