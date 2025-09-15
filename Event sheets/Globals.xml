@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Globals</name>
     <events>
-        <variable constant="0" name="DevMode" sid="433491871019591" static="0" type="number">0</variable>
+        <variable constant="0" name="DevMode" sid="433491871019591" static="0" type="number">1</variable>
         <variable constant="0" name="Attacking" sid="629694586569741" static="0" type="number">1</variable>
         <variable constant="0" name="SkipPhase" sid="511835939490090" static="0" type="number">0</variable>
         <variable constant="0" name="UsedItem" sid="390750793034360" static="0" type="number">0</variable>

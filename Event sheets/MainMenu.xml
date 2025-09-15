@@ -1074,7 +1074,6 @@
                 </event-block>
                 <event-block any="1" sid="3934138391911">
                     <conditions>
-                        <condition id="-2" name="On start of layout" sid="1041146530268575" type="System" />
                         <condition id="0" name="On function" sid="7258591913794977" type="Function">
                             <param id="0" name="Name">&quot;AttackLoadFinished&quot;</param>
                         </condition>
