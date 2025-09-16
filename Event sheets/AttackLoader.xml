@@ -67,20 +67,6 @@
                             <param id="0" name="Seconds">0.5</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="981345734171325">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="269506379439922" type="RPGText">
-                                    <param id="0" name="Instance variable">Name</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;AttacksLoaded&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="579777428900766" type="RPGText" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
                 <event-block sid="3323177073111975">
                     <conditions>

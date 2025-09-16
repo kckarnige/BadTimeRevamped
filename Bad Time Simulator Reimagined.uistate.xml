@@ -80,6 +80,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/UIMercyDelta/" />
         <folder expanded="1" path="animation-folder/DeltaName/" />
         <folder expanded="1" path="animation-folder/KRHPFilter/" />
+        <folder expanded="1" path="animation-folder/UIActDeltaALT/" />
         <folder expanded="1" path="animation-folder/SansHead/" />
         <folder expanded="1" path="animation-folder/SansBody/" />
         <folder expanded="1" path="animation-folder/SansLegs/" />

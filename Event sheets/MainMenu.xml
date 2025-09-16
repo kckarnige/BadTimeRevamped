@@ -1074,6 +1074,7 @@
                 </event-block>
                 <event-block any="1" sid="3934138391911">
                     <conditions>
+                        <condition id="-2" name="On start of layout" sid="1041146530268575" type="System" />
                         <condition id="0" name="On function" sid="7258591913794977" type="Function">
                             <param id="0" name="Name">&quot;AttackLoadFinished&quot;</param>
                         </condition>
@@ -1102,7 +1103,7 @@
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="534858150255545" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
+                                    <param id="0" name="Seconds">0.125</param>
                                 </action>
                                 <action id="0" name="Call function" sid="9637040683959957" type="Function">
                                     <param id="0" name="Name">&quot;MenuMain&quot;</param>
@@ -1110,6 +1111,18 @@
                                 </action>
                             </actions>
                             <sub-events>
+                                <event-block sid="491120146345161">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="495226665846442" type="RPGText">
+                                            <param id="0" name="Instance variable">Name</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;AttacksLoaded&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="115118186651851" type="RPGText" />
+                                    </actions>
+                                </event-block>
                                 <variable constant="0" name="FirstStart" sid="9570519099240379" static="1" type="number">1</variable>
                                 <event-block sid="6664513252215855">
                                     <conditions>

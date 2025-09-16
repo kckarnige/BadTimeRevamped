@@ -712,10 +712,6 @@
                             <param id="2" name="X">546</param>
                             <param id="3" name="Y">430</param>
                         </action>
-                        <action id="4" name="Set animation" sid="612857553811944" type="HPBarMask">
-                            <param id="0" name="Animation">&quot;Deltarune&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
                         <action id="-3" name="Create object" sid="725079059223671" type="System">
                             <param id="0" name="Object to create">DeltaIcon</param>
                             <param id="1" name="Layer">&quot;HPBar&quot;</param>
@@ -868,6 +864,13 @@
                                     <param id="1" name="Parameter index">2</param>
                                     <param id="2" name="Value">100</param>
                                 </action>
+                                <action id="-3" name="Create object" sid="504021542790160" type="System">
+                                    <param id="0" name="Object to create">UIActDeltaALT</param>
+                                    <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                                    <param id="2" name="X">UIFightDelta.X + 64</param>
+                                    <param id="3" name="Y">UIFightDelta.Y</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="669052450985443" type="UIActDelta" />
                             </actions>
                         </event-block>
                         <event-block any="1" sid="475612149629008">
@@ -895,12 +898,12 @@
                                 <action id="-28" name="Set effect parameter" sid="965307508899624" type="UIBorderStuff">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">100</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="750362611057896" type="UIBorderStuff">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">100</param>
+                                    <param id="2" name="Value">0</param>
                                 </action>
                                 <action id="-7" name="Set size" sid="100226041624715" type="Line">
                                     <param id="0" name="Width">460</param>
@@ -914,12 +917,12 @@
                                 <action id="-28" name="Set effect parameter" sid="808772798930082" type="Line">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">100</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="285716494445454" type="Line">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">100</param>
+                                    <param id="2" name="Value">0</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="741718574759051" type="HPBar">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
@@ -929,13 +932,95 @@
                                 <action id="-28" name="Set effect parameter" sid="287368481424813" type="HPBar">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">100</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="194033741825951" type="HPBar">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="552317270015465" type="System">
+                                    <param id="0" name="Object to create">UIActDeltaALT</param>
+                                    <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                                    <param id="2" name="X">UIFightDelta.X + 64</param>
+                                    <param id="3" name="Y">UIFightDelta.Y</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="598649308382021" type="UIActDelta" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="165508831819681">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="104425054724608" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="271299480091290" type="DeltaIcon">
+                                    <param id="0" name="Animation">&quot;Noelle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="755269412736192" type="DeltaName">
+                                    <param id="0" name="Animation">&quot;Noelle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="917989946548003" type="UIBorderStuff">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
                                     <param id="2" name="Value">100</param>
                                 </action>
+                                <action id="-28" name="Set effect parameter" sid="829687360775275" type="UIBorderStuff">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="433530023587935" type="UIBorderStuff">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="430508217274715" type="Line">
+                                    <param id="0" name="Width">460</param>
+                                    <param id="1" name="Height">2</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="505596447621214" type="Line">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="569446355458075" type="Line">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="724547765402583" type="Line">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="565198241649164" type="HPBar">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="696158653217265" type="HPBar">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="122108099571107" type="HPBar">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="158374562016128" type="System">
+                                    <param id="0" name="Object to create">UIActDeltaALT</param>
+                                    <param id="1" name="Layer">&quot;Buttons&quot;</param>
+                                    <param id="2" name="X">UIFightDelta.X + 64</param>
+                                    <param id="3" name="Y">UIFightDelta.Y</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="718589728744858" type="UIActDelta" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -10246,7 +10331,29 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block any="1" sid="731491773453306">
+                        <event-block any="1" sid="694440525186304">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="200762030370246" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="979170344996507" type="DeltaIcon">
+                                    <param id="0" name="Animation">&quot;NoelleHurt&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="148365585978475" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="808957098294662" type="DeltaIcon">
+                                    <param id="0" name="Animation">&quot;Noelle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="731491773453306">
                             <conditions>
                                 <condition id="-8" inverted="1" name="Compare two values" sid="839373026111878" type="System">
                                     <param id="0" name="First value">uppercase(Name)</param>
@@ -10257,6 +10364,11 @@
                                     <param id="0" name="First value">uppercase(Name)</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">&quot;RALSEI&quot;</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="924863740678531" type="System">
+                                    <param id="0" name="First value">uppercase(Name)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;NOELLE&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>

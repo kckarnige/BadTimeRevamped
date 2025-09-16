@@ -396,6 +396,12 @@
                     <animation framecount="1" loop="0" name="RalseiHurt" pingpong="0" repeatcount="1" repeatto="0" sid="721719136334640" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
+                    <animation framecount="1" loop="0" name="Noelle" pingpong="0" repeatcount="1" repeatto="0" sid="191760285612540" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="NoelleHurt" pingpong="0" repeatcount="1" repeatto="0" sid="278350557801414" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="UIFightDelta" sid="792496565127753">
@@ -470,6 +476,9 @@
                     <animation framecount="1" loop="0" name="Ralsei" pingpong="0" repeatcount="1" repeatto="0" sid="775206315449232" speed="5">
                         <frame duration="1" hotspotX="0.0163934" hotspotY="0.0666667" />
                     </animation>
+                    <animation framecount="1" loop="0" name="Noelle" pingpong="0" repeatcount="1" repeatto="0" sid="220021124753094" speed="5">
+                        <frame duration="1" hotspotX="0.0163934" hotspotY="0.0666667" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="KRHPFilter" sid="127099641806126">
@@ -492,6 +501,21 @@
             <object-type name="HPMaskDR" sid="815241581417454">
                 <plugin id="NinePatch" />
                 <texture />
+            </object-type>
+            <object-type name="UIActDeltaALT" sid="462949784383768">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976436687991447" speed="5">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5">
+                            <image-point name="Heart" x="0.516129" y="0.5" />
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Highlight" pingpong="0" repeatcount="1" repeatto="0" sid="341659583607040" speed="5">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_actbt_center_1.png">
+                            <image-point name="Heart" x="0.516129" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Enemies">
@@ -1699,6 +1723,7 @@
             <members>
                 <member>UIAct</member>
                 <member>UIActDelta</member>
+                <member>UIActDeltaALT</member>
                 <member>UIDefendDelta</member>
                 <member>UIFight</member>
                 <member>UIFightDelta</member>
